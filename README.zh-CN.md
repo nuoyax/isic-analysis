@@ -1,27 +1,56 @@
+<div align="center">
+
 # ISIC 产业结构分析
 
-[English](./README.md) | **中文**
+**基于 ISIC Rev.5 产业结构分类的交互式桑基图 ——<br>四层下钻，一直落到一批真实公司。**
 
-基于 **ISIC Rev.5** 产业结构分类的交互式桑基图，四层下钻，一直落到一批真实公司。
+[English](./README.md) · [**中文**](./README.zh-CN.md)
+
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
+[![ECharts](https://img.shields.io/badge/ECharts-5-AA344D?logo=apacheecharts&logoColor=white)](https://echarts.apache.org)
+[![Node](https://img.shields.io/badge/Node-%E2%89%A5%2022.5-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org)
+
+<img src="./docs/screenshot.png" alt="ISIC 产业结构分析 —— 桑基图视图" width="100%">
+
+</div>
+
+---
+
+## 📖 目录
+
+- [功能](#-功能)
+- [关于这张图](#-关于这张图)
+- [数据 —— 信任任何一个数字之前请先读这里](#-数据--信任任何一个数字之前请先读这里)
+- [快速开始](#-快速开始)
+- [数据管线](#-数据管线)
+- [SQLite 建库与 API（可选）](#-sqlite-建库与-api可选)
+- [目录结构](#-目录结构)
+- [许可](#-许可)
+
+## ✨ 功能
 
 - **22 门类** → **87 大类** → **258 中类** → **463 小类** → 公司
-- 点击任意方块下钻；再点一次、按 `Esc`、或点面包屑即可返回上层。
-- 表格视图与图表内容一一对应，任何数值都不必靠悬停才能读到。
-- 浅色 / 深色两套主题，均经校验。
+- **点击下钻** —— 点击任意方块下钻；再点一次、按 `Esc`、或点面包屑即可返回上层。
+- **表格视图**与图表内容一一对应，任何数值都不必靠悬停才能读到。
+- **浅色 / 深色**两套主题，均经校验。
+- **离线可用** —— 构建不走网络；可选的数据管线会把下载内容缓存下来。
 
-## 关于这张图
+## 📊 关于这张图
 
 桑基图**带宽 = 收录公司数**。空小类保留 1 个单位的宽度（灰色的「暂无收录」占位），
 这样结构不会因为覆盖度低而从图上消失。于是同一列内宽度始终可比，ISIC 的结构完整性
 也不受"我们恰好收录了多少家公司"影响。
 
-配色：每个门类按 ISIC 原序固定占用 8 个色槽之一，筛选不会给幸存者重新上色。
+**配色：** 每个门类按 ISIC 原序固定占用 8 个色槽之一，筛选不会给幸存者重新上色。
 四个层级把该色相向底色混合出深浅：门类最深、小类最浅，因此一个门类读起来是一条
 可辨认的色带。
 
-## 数据 —— 信任任何一个数字之前请先读这里
+## 🧭 数据 —— 信任任何一个数字之前请先读这里
 
-这份数据的两半**来源不同**，这一点很重要：
+> [!IMPORTANT]
+> 这份数据的两半**来源不同**，这一点很重要。
 
 | 部分 | 来源 | 可信度 |
 |---|---|---|
@@ -37,7 +66,7 @@ GLEIF 与 SEC 都已实测：**两者都不提供 ISIC 分类**（SEC 的 `sic` 
 
 归类按主营业务活动就近判定。多元化集团确实可能跨类经营。
 
-## 快速开始
+## 🚀 快速开始
 
 ```bash
 npm install
@@ -49,7 +78,7 @@ npm run typecheck    # tsc -b --noEmit
 npm run build        # typecheck + vite build
 ```
 
-## 数据管线
+## 🔧 数据管线
 
 脚本**只在本地手动跑**，不进构建，所以 `npm run build` 离线可用。
 
@@ -72,7 +101,7 @@ npm run collect      # 富化公司种子      → src/data/companies.generated.
 要改公司数据：改种子清单，再跑 `npm run collect`。**不要**直接编辑
 `companies.generated.json`。
 
-## SQLite 建库与 API（可选）
+## 🗄️ SQLite 建库与 API（可选）
 
 同样这 830 个节点 / 150 家公司，也可以从本地 SQLite 库提供。**这是增强，不是必需**
 ——没有它时页面完全走内存数据（见下文「宕机回落」）。
@@ -118,7 +147,7 @@ npm run api    # 只读暴露该库 → http://127.0.0.1:5184
 proxy error。`NodeCard` 与 `SearchBar` 各自回落到本地查询；关掉 API 后图表、下钻、
 详情、搜索全部正常，**控制台零错误**。
 
-## 目录结构
+## 📁 目录结构
 
 ```
 src/data/isicRev5.generated.ts   UN 官方结构（生成）
@@ -136,6 +165,6 @@ scripts/build-db.mjs             SQLite 建库（重断言、幂等）
 server/index.mjs                 库之上的只读 JSON API
 ```
 
-## 许可
+## 📄 许可
 
 分析代码可自由参考；ISIC 结构版权归联合国统计司。公司数据归各自登记机构所有。
