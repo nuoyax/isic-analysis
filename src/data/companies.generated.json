@@ -1,0 +1,4531 @@
+{
+  "_generatedBy": "npm run collect (scripts/enrich-companies.mjs)",
+  "_note": "classCode（ISIC Rev.5 小类）与中文业务描述来自人工维护的 scripts/seed/companies.seed.json；gleif / sec 字段为外部权威源富化结果，仅作身份校对，不参与归类。",
+  "sources": {
+    "isic": {
+      "name": "ISIC Rev.5 (UN Statistics Division)",
+      "url": "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/ISIC_Rev_5_english_structure.csv",
+      "sha256": "fb9691d3cd95c9df616e447f35fa7d2d3a0b4ad0a176981178c3d9c480c4a73e"
+    },
+    "gleif": {
+      "name": "GLEIF LEI records",
+      "url": "https://api.gleif.org/api/v1/lei-records"
+    },
+    "sec": {
+      "name": "SEC EDGAR company tickers",
+      "url": "https://www.sec.gov/files/company_tickers.json"
+    }
+  },
+  "companies": [
+    {
+      "id": "beidahuang",
+      "name": "北大荒农业股份有限公司",
+      "nameEn": "Heilongjiang Beidahuang Agriculture Co., Ltd.",
+      "country": "中国",
+      "hq": "黑龙江 哈尔滨",
+      "founded": 1998,
+      "ticker": "600598.SH",
+      "size": "大型",
+      "classCode": "0111",
+      "business": "东北黑土区规模化粮食种植与土地承包经营",
+      "products": "水稻、玉米、大豆、小麦、农业社会化服务",
+      "desc": "中国规模最大的农业类上市公司之一，依托黑龙江垦区 1000 余万亩耕地，实行\"土地承包 + 农业服务\"双轮驱动。核心资产是三江平原集中连片的黑土地，机械化率与标准化程度居国内前列。",
+      "website": "https://www.bdh600598.com",
+      "tags": [
+        "粮食安全",
+        "土地规模化",
+        "国企"
+      ],
+      "gleif": {
+        "lei": "300300QU9AQS1YMTV002",
+        "legalName": "黑龙江北大荒农业股份有限公司",
+        "country": "CN",
+        "city": "哈尔滨市",
+        "region": "CN-HL",
+        "legalForm": "ECAK",
+        "registrationDate": "1998-11-26",
+        "registrationStatus": "LAPSED",
+        "score": 0.75,
+        "queriedAs": "北大荒农业股份有限公司"
+      }
+    },
+    {
+      "id": "longping",
+      "name": "袁隆平农业高科技股份有限公司",
+      "nameEn": "Longping High-Tech Agriculture Co., Ltd.",
+      "country": "中国",
+      "hq": "湖南 长沙",
+      "founded": 1999,
+      "ticker": "000998.SZ",
+      "size": "大型",
+      "classCode": "0112",
+      "business": "杂交水稻种子研发、繁育与销售",
+      "products": "杂交水稻种子、玉米种子、蔬菜种子、农化服务",
+      "desc": "由袁隆平院士团队发起设立，是全球领先的杂交水稻种业企业。以\"育繁推一体化\"模式经营，在全球多个水稻主产国设有研发与推广网络。",
+      "tags": [
+        "种业",
+        "杂交水稻",
+        "农业科技"
+      ],
+      "gleif": {
+        "lei": "3003002GTO6M29V23F59",
+        "legalName": "袁隆平农业高科技股份有限公司",
+        "country": "CN",
+        "city": "长沙市",
+        "region": "CN-HN",
+        "legalForm": "ECAK",
+        "registrationDate": "1999-06-29",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "袁隆平农业高科技股份有限公司"
+      }
+    },
+    {
+      "id": "shouguang-veg",
+      "name": "寿光蔬菜产业控股集团",
+      "nameEn": "Shouguang Vegetable Industry Holding Group",
+      "country": "中国",
+      "hq": "山东 潍坊",
+      "founded": 2003,
+      "size": "大型",
+      "classCode": "0113",
+      "business": "设施蔬菜规模化种植与蔬菜供应链运营",
+      "products": "设施蔬菜、种苗、蔬菜批发市场运营、冷链物流",
+      "desc": "山东寿光是中国冬暖式大棚蔬菜的发源地。集团整合种苗、种植、检测、批发市场与冷链环节，运营寿光农产品物流园，是国内蔬菜价格形成的重要节点。",
+      "tags": [
+        "设施农业",
+        "大棚蔬菜",
+        "供应链"
+      ]
+    },
+    {
+      "id": "modern-dairy",
+      "name": "现代牧业（集团）有限公司",
+      "nameEn": "Modern Dairy Group",
+      "country": "中国",
+      "hq": "安徽 马鞍山",
+      "founded": 2005,
+      "ticker": "1117.HK",
+      "size": "大型",
+      "classCode": "0141",
+      "business": "规模化奶牛养殖与原奶生产",
+      "products": "生鲜乳、奶牛种畜、饲料种植",
+      "desc": "中国最大的规模化牧场运营企业之一，采用\"种养加一体化\"的万头牧场模式，原奶直供下游乳制品企业。以规模化和标准化著称。",
+      "tags": [
+        "奶牛养殖",
+        "万头牧场",
+        "原奶"
+      ],
+      "gleif": {
+        "lei": "300300K2E4W6IT7O2O14",
+        "legalName": "现代牧业（集团）有限公司",
+        "country": "CN",
+        "city": "马鞍山市",
+        "region": "CN-AH",
+        "legalForm": "ECAK",
+        "registrationDate": "2008-07-06",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "现代牧业（集团）有限公司"
+      }
+    },
+    {
+      "id": "muyuan",
+      "name": "牧原食品股份有限公司",
+      "nameEn": "Muyuan Foods Co., Ltd.",
+      "country": "中国",
+      "hq": "河南 南阳",
+      "founded": 1992,
+      "ticker": "002714.SZ",
+      "size": "巨头",
+      "classCode": "0145",
+      "business": "自繁自养一体化生猪养殖",
+      "products": "商品猪、仔猪、种猪、生猪屠宰与肉制品",
+      "desc": "全球出栏量最大的生猪养殖企业。以\"全自养、全链条、智能化\"模式运营，自研猪舍环境控制与疫病防控体系，成本控制能力是其核心竞争壁垒。",
+      "tags": [
+        "生猪",
+        "自繁自养",
+        "规模化养殖"
+      ],
+      "gleif": {
+        "lei": "3003006NCTDQW4KZR676",
+        "legalName": "牧原食品股份有限公司",
+        "country": "CN",
+        "city": "南阳市",
+        "region": "CN-HA",
+        "legalForm": "ECAK",
+        "registrationDate": "2000-07-12",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "牧原食品股份有限公司"
+      }
+    },
+    {
+      "id": "wens",
+      "name": "温氏食品集团股份有限公司",
+      "nameEn": "Wens Foodstuff Group Co., Ltd.",
+      "country": "中国",
+      "hq": "广东 云浮",
+      "founded": 1983,
+      "ticker": "300498.SZ",
+      "size": "巨头",
+      "classCode": "0146",
+      "business": "\"公司+农户\"模式的畜禽养殖",
+      "products": "肉鸡、肉猪、肉鸭、鸡蛋、兽药疫苗",
+      "desc": "中国畜禽养殖龙头，独创\"公司+现代家庭农场\"模式：公司提供种苗、饲料、防疫与技术，农户负责饲养并结算收益。禽类出栏量长期居全国首位。",
+      "tags": [
+        "公司+农户",
+        "肉鸡",
+        "生猪"
+      ],
+      "gleif": {
+        "lei": "3003005O7DXT61IXLJ96",
+        "legalName": "温氏食品集团股份有限公司",
+        "country": "CN",
+        "city": "云浮市",
+        "region": "CN-GD",
+        "legalForm": "ECAK",
+        "registrationDate": "1993-07-25",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "温氏食品集团股份有限公司"
+      }
+    },
+    {
+      "id": "sunnong",
+      "name": "福建圣农发展股份有限公司",
+      "nameEn": "Fujian Sunner Development Co., Ltd.",
+      "country": "中国",
+      "hq": "福建 南平",
+      "founded": 1983,
+      "ticker": "002299.SZ",
+      "size": "大型",
+      "classCode": "0146",
+      "business": "白羽肉鸡全产业链自繁自养",
+      "products": "白羽肉鸡种源、鸡肉生鲜品、深加工鸡肉制品",
+      "desc": "中国白羽肉鸡行业的全产业链龙头，自主培育\"圣泽 901\"白羽肉鸡种源，打破国外种源长期垄断。实现从饲料、种源、养殖到食品加工的一体化闭环。",
+      "tags": [
+        "白羽肉鸡",
+        "种源自主",
+        "全产业链"
+      ],
+      "gleif": {
+        "lei": "300300O2MSF659DM5M44",
+        "legalName": "福建圣农发展股份有限公司",
+        "country": "CN",
+        "city": "南平市",
+        "region": "CN-FJ",
+        "legalForm": "ECAK",
+        "registrationDate": "1999-12-20",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "福建圣农发展股份有限公司"
+      }
+    },
+    {
+      "id": "cnf-forestry",
+      "name": "中国林业集团有限公司",
+      "nameEn": "China Forestry Group Corporation",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1984,
+      "size": "巨头",
+      "classCode": "0210",
+      "business": "国家储备林建设、造林与森林经营",
+      "products": "人工林、木材、林下经济产品、生态修复服务",
+      "desc": "国务院国资委监管的林业央企，承担国家储备林基地建设任务，业务覆盖造林营林、木材加工、林业碳汇与生态治理，是木材供应链安全的重要承载主体。",
+      "tags": [
+        "央企",
+        "储备林",
+        "碳汇"
+      ],
+      "gleif": {
+        "lei": "300300UX0JWLX3LJWU24",
+        "legalName": "中国林业集团有限公司",
+        "country": "CN",
+        "city": "朝阳区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "1984-02-26",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "中国林业集团有限公司"
+      }
+    },
+    {
+      "id": "shenhua",
+      "name": "中国神华能源股份有限公司",
+      "nameEn": "China Shenhua Energy Company Limited",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2004,
+      "ticker": "601088.SH",
+      "size": "巨头",
+      "classCode": "0510",
+      "business": "煤炭开采、铁路、港口、航运与发电一体化",
+      "products": "动力煤、焦煤、电力、铁路运输、港口装卸",
+      "desc": "全球市值最大的煤炭企业。独有的\"煤电路港航\"纵向一体化模式，使其在同一集团内完成从采掘到运输到发电的全链条协同，抗周期能力显著强于单一煤炭企业。",
+      "tags": [
+        "煤电路港航",
+        "央企",
+        "一体化"
+      ]
+    },
+    {
+      "id": "peabody",
+      "name": "皮博迪能源公司",
+      "nameEn": "Peabody Energy Corporation",
+      "country": "美国",
+      "hq": "密苏里州 圣路易斯",
+      "founded": 1883,
+      "ticker": "BTU.NYSE",
+      "size": "大型",
+      "classCode": "0510",
+      "business": "全球动力煤与冶金煤开采",
+      "products": "动力煤、冶金煤（焦煤）",
+      "desc": "美国最大的煤炭生产商，在粉河盆地拥有大型露天矿。曾经历破产重整，现聚焦优质海运煤资产，是国际煤炭贸易的重要参与者。",
+      "tags": [
+        "动力煤",
+        "海运煤"
+      ],
+      "gleif": {
+        "lei": "EJCO258LNNVSKAR2JX59",
+        "legalName": "PEABODY ENERGY CORPORATION",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1998-02-27",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Peabody Energy Corporation"
+      },
+      "sec": {
+        "cik": "0001064728",
+        "legalName": "PEABODY ENERGY CORP",
+        "ticker": "BTU",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001064728&type=10-K",
+        "sic": "1221",
+        "sicDescription": "Bituminous Coal & Lignite Surface Mining",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "aramco",
+      "name": "沙特阿拉伯国家石油公司",
+      "nameEn": "Saudi Arabian Oil Company (Saudi Aramco)",
+      "country": "沙特阿拉伯",
+      "hq": "达兰",
+      "founded": 1933,
+      "ticker": "2222.SR",
+      "size": "巨头",
+      "classCode": "0610",
+      "business": "原油勘探、开采与出口",
+      "products": "原油、天然气、炼化产品、化工品",
+      "desc": "全球最大的石油生产企业，拥有全球最低的原油开采成本之一和最大的已探明储量。2019 年上市，是历史上规模最大的 IPO。",
+      "tags": [
+        "国家石油公司",
+        "低成本原油"
+      ]
+    },
+    {
+      "id": "petrochina",
+      "name": "中国石油天然气股份有限公司",
+      "nameEn": "PetroChina Company Limited",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1999,
+      "ticker": "601857.SH / 0857.HK",
+      "size": "巨头",
+      "classCode": "0610",
+      "business": "上游油气勘探开采为主的一体化石油公司",
+      "products": "原油、天然气、成品油、炼化产品、管道运输",
+      "desc": "中国最大的油气生产商，业务以上游勘探开发为重，同时覆盖炼化、销售与天然气管网。国内原油产量与天然气产量均居首位。",
+      "tags": [
+        "三桶油",
+        "上游",
+        "央企"
+      ],
+      "gleif": {
+        "lei": "529900RPY4YG47TRSV05",
+        "legalName": "PetroChina Company Limited",
+        "country": "CN",
+        "city": "Beijing",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "PETROCHINA COMPANY LIMITED"
+      }
+    },
+    {
+      "id": "exxonmobil",
+      "name": "埃克森美孚公司",
+      "nameEn": "Exxon Mobil Corporation",
+      "country": "美国",
+      "hq": "德克萨斯州 斯普林",
+      "founded": 1882,
+      "ticker": "XOM.NYSE",
+      "size": "巨头",
+      "classCode": "0610",
+      "business": "全球一体化油气勘探、开采、炼化与化工",
+      "products": "原油、天然气、燃料、润滑油、基础化工品",
+      "desc": "由洛克菲勒标准石油解体而来，长期位列全球市值最高公司行列。坚持\"上游为主 + 化工增值\"结构，在圭亚那等深水区块拥有重大发现。",
+      "tags": [
+        "超级石油巨头",
+        "深水勘探"
+      ],
+      "gleif": {
+        "lei": "J3WHBG0MTS7O8ZVMDC91",
+        "legalName": "EXXON MOBIL CORPORATION",
+        "country": "US",
+        "city": "Ewing",
+        "region": "US-NJ",
+        "legalForm": "XSNP",
+        "registrationDate": "1882-08-05",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "EXXON MOBIL CORPORATION"
+      },
+      "sec": {
+        "cik": "0002115436",
+        "legalName": "ExxonMobil Holdings Corp",
+        "ticker": "XOM",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002115436&type=10-K",
+        "sic": "2911",
+        "sicDescription": "Petroleum Refining",
+        "stateOfIncorporation": "TX"
+      }
+    },
+    {
+      "id": "gazprom",
+      "name": "俄罗斯天然气工业股份公司",
+      "nameEn": "Gazprom",
+      "country": "俄罗斯",
+      "hq": "莫斯科",
+      "founded": 1989,
+      "size": "巨头",
+      "classCode": "0620",
+      "business": "天然气开采、管道输送与出口",
+      "products": "天然气、凝析油、管道运输服务",
+      "desc": "全球天然气储量与产量最大的企业，同时拥有俄罗斯统一供气系统管网。对欧洲的管道气供应使其长期具备地缘经济影响力。",
+      "tags": [
+        "国家控股",
+        "管道气",
+        "地缘"
+      ]
+    },
+    {
+      "id": "bhpbilliton",
+      "name": "必和必拓集团",
+      "nameEn": "BHP Group Limited",
+      "country": "澳大利亚",
+      "hq": "墨尔本",
+      "founded": 1885,
+      "ticker": "BHP.NYSE",
+      "size": "巨头",
+      "classCode": "0710",
+      "business": "铁矿石、铜、炼焦煤等大宗矿产开采",
+      "products": "铁矿石、铜精矿、炼焦煤、钾肥、镍",
+      "desc": "全球最大的矿业公司之一，西澳皮尔巴拉地区的铁矿石业务是其利润基石。近年向\"面向未来的大宗商品\"（铜、钾肥）倾斜资本开支。",
+      "tags": [
+        "铁矿石",
+        "皮尔巴拉",
+        "大宗商品"
+      ],
+      "gleif": {
+        "lei": "WZE1WSENV6JSZFK0JC28",
+        "legalName": "BHP GROUP LIMITED",
+        "country": "AU",
+        "city": "MELBOURNE",
+        "region": "AU-VIC",
+        "legalForm": "R4KK",
+        "registrationDate": "1885-08-13",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "BHP GROUP LIMITED"
+      },
+      "sec": {
+        "cik": "0000811809",
+        "legalName": "BHP Group Ltd",
+        "ticker": "BHP",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000811809&type=10-K",
+        "sic": "1000",
+        "sicDescription": "Metal Mining",
+        "stateOfIncorporation": "C3"
+      }
+    },
+    {
+      "id": "riotinto",
+      "name": "力拓集团",
+      "nameEn": "Rio Tinto Group",
+      "country": "澳大利亚 / 英国",
+      "hq": "墨尔本 / 伦敦",
+      "founded": 1873,
+      "ticker": "RIO.NYSE",
+      "size": "巨头",
+      "classCode": "0710",
+      "business": "铁矿石、铝、铜等矿产开采与冶炼",
+      "products": "铁矿石、铝土矿与电解铝、铜、钻石、硼砂",
+      "desc": "与必和必拓并称\"两拓\"，西澳铁矿石产能全球领先。同时拥有蒙古奥尤陶勒盖铜金矿等大型资产，业务横跨五大洲。",
+      "tags": [
+        "铁矿石",
+        "铝",
+        "跨国矿业"
+      ],
+      "gleif": {
+        "lei": "529900X2VMAQT2PE0V24",
+        "legalName": "RIO TINTO LIMITED",
+        "country": "AU",
+        "city": "MELBOURNE",
+        "region": "AU-VIC",
+        "legalForm": "R4KK",
+        "registrationDate": "1959-12-17",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "RIO TINTO LIMITED"
+      },
+      "sec": {
+        "cik": "0000863064",
+        "legalName": "RIO TINTO PLC",
+        "ticker": "RIO",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000863064&type=10-K",
+        "sic": "1000",
+        "sicDescription": "Metal Mining",
+        "stateOfIncorporation": "X0"
+      }
+    },
+    {
+      "id": "vale",
+      "name": "淡水河谷公司",
+      "nameEn": "Vale S.A.",
+      "country": "巴西",
+      "hq": "里约热内卢",
+      "founded": 1942,
+      "ticker": "VALE.NYSE",
+      "size": "巨头",
+      "classCode": "0710",
+      "business": "高品位铁矿石开采与海运",
+      "products": "铁矿石、球团矿、镍、铜、锰、铁合金",
+      "desc": "全球最大的铁矿石生产商之一，其卡拉加斯矿区以高品位著称，配合自营 Valemax 船队面向亚洲市场，是中国钢铁工业的重要原料来源。",
+      "tags": [
+        "高品位铁矿",
+        "Valemax"
+      ],
+      "gleif": {
+        "lei": "254900SMTWBX7RU2SR20",
+        "legalName": "VALE S.A.",
+        "country": "BR",
+        "city": "RIO DE JANEIRO",
+        "region": "BR-RJ",
+        "legalForm": "X0SD",
+        "registrationDate": "1969-02-11",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "VALE S.A."
+      },
+      "sec": {
+        "cik": "0000917851",
+        "legalName": "Vale S.A.",
+        "ticker": "VALE",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000917851&type=10-K",
+        "sic": "1000",
+        "sicDescription": "Metal Mining",
+        "stateOfIncorporation": ""
+      }
+    },
+    {
+      "id": "glencore",
+      "name": "嘉能可公司",
+      "nameEn": "Glencore plc",
+      "country": "瑞士",
+      "hq": "巴尔",
+      "founded": 1974,
+      "ticker": "GLEN.LSE",
+      "size": "巨头",
+      "classCode": "0729",
+      "business": "有色金属矿产开采与全球大宗商品贸易",
+      "products": "铜、钴、锌、镍、煤炭、石油贸易",
+      "desc": "全球最大的大宗商品贸易商之一，兼具矿业资产与贸易网络，以\"贸易 + 资产\"双轮模式著称。在刚果（金）钴资源领域具有显著影响力。",
+      "tags": [
+        "贸易商",
+        "钴",
+        "铜"
+      ],
+      "gleif": {
+        "lei": "2138002658CPO9NBH955",
+        "legalName": "GLENCORE PLC",
+        "country": "JE",
+        "city": "ST HELIER",
+        "region": "",
+        "legalForm": "JOX1",
+        "registrationDate": "2011-03-14",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "GLENCORE PLC"
+      }
+    },
+    {
+      "id": "zijin",
+      "name": "紫金矿业集团股份有限公司",
+      "nameEn": "Zijin Mining Group Co., Ltd.",
+      "country": "中国",
+      "hq": "福建 龙岩",
+      "founded": 1993,
+      "ticker": "601899.SH / 2899.HK",
+      "size": "巨头",
+      "classCode": "0729",
+      "business": "铜、金、锌等金属矿产勘探与开发",
+      "products": "矿产铜、矿产金、锌锭、锂矿",
+      "desc": "中国国际化程度最高的矿业企业之一，以\"低品位矿石大规模开发\"的技术能力闻名。海外资产遍及刚果（金）、塞尔维亚、南美等地，近年大举切入锂资源。",
+      "tags": [
+        "铜金",
+        "海外并购",
+        "低品位开发"
+      ],
+      "gleif": {
+        "lei": "529900ABI5CBFXD01Q05",
+        "legalName": "Zijin Mining Group Co. Ltd.",
+        "country": "CN",
+        "city": "Longyan City",
+        "region": "CN-FJ",
+        "legalForm": "ECAK",
+        "registrationDate": "",
+        "registrationStatus": "DUPLICATE",
+        "score": 1,
+        "queriedAs": "Zijin Mining Group Co., Ltd."
+      }
+    },
+    {
+      "id": "chinasalt",
+      "name": "中国盐业集团有限公司",
+      "nameEn": "China National Salt Industry Group",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1950,
+      "size": "大型",
+      "classCode": "0893",
+      "business": "盐资源开采、食盐专营与盐化工",
+      "products": "食盐、工业盐、纯碱、氯碱化工产品",
+      "desc": "承担全国食盐专营职能的中央企业，业务覆盖海盐、湖盐、井矿盐三类资源开采，并向下游盐化工延伸。",
+      "tags": [
+        "食盐专营",
+        "央企",
+        "盐化工"
+      ],
+      "gleif": {
+        "lei": "300300MY1VEJ9M5T7K41",
+        "legalName": "中国盐业集团有限公司",
+        "country": "CN",
+        "city": "丰台区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "1986-01-10",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "中国盐业集团有限公司"
+      }
+    },
+    {
+      "id": "shuanghui",
+      "name": "河南双汇投资发展股份有限公司",
+      "nameEn": "Henan Shuanghui Investment & Development Co., Ltd.",
+      "country": "中国",
+      "hq": "河南 漯河",
+      "founded": 1958,
+      "ticker": "000895.SZ",
+      "size": "巨头",
+      "classCode": "1010",
+      "business": "生猪屠宰与肉类深加工",
+      "products": "生鲜猪肉、火腿肠、低温肉制品、预制菜",
+      "desc": "中国最大的肉类加工企业，母公司万洲国际同时控股美国史密斯菲尔德。以\"屠宰 + 肉制品\"双主业模式，渠道网络覆盖全国。",
+      "tags": [
+        "肉类加工",
+        "万洲国际",
+        "预制菜"
+      ]
+    },
+    {
+      "id": "tyson",
+      "name": "泰森食品公司",
+      "nameEn": "Tyson Foods, Inc.",
+      "country": "美国",
+      "hq": "阿肯色州 斯普林代尔",
+      "founded": 1935,
+      "ticker": "TSN.NYSE",
+      "size": "巨头",
+      "classCode": "1010",
+      "business": "禽肉、牛肉、猪肉屠宰加工",
+      "products": "鸡肉、牛肉、猪肉、预制食品、植物蛋白",
+      "desc": "美国最大的肉类加工企业，向麦当劳等连锁餐饮与商超供应蛋白产品。业务分为牛肉、猪肉、鸡肉、预制食品四大板块。",
+      "tags": [
+        "蛋白供应商",
+        "预制食品"
+      ],
+      "gleif": {
+        "lei": "WD6L6041MNRW1JE49D58",
+        "legalName": "TYSON FOODS, INC.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1986-01-31",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Tyson Foods, Inc."
+      },
+      "sec": {
+        "cik": "0000100493",
+        "legalName": "TYSON FOODS, INC.",
+        "ticker": "TSN",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000100493&type=10-K",
+        "sic": "2015",
+        "sicDescription": "Poultry Slaughtering and Processing",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "yili",
+      "name": "内蒙古伊利实业集团股份有限公司",
+      "nameEn": "Inner Mongolia Yili Industrial Group Co., Ltd.",
+      "country": "中国",
+      "hq": "内蒙古 呼和浩特",
+      "founded": 1993,
+      "ticker": "600887.SH",
+      "size": "巨头",
+      "classCode": "1050",
+      "business": "液态奶、奶粉、冷饮等乳制品制造",
+      "products": "常温白奶、低温鲜奶、婴幼儿配方奶粉、奶酪、冰淇淋",
+      "desc": "亚洲最大的乳制品企业。核心优势在于覆盖全国的冷链与经销商网络，以及在上游牧场的参控股布局，形成\"奶源—加工—渠道\"闭环。",
+      "tags": [
+        "乳制品",
+        "全国渠道",
+        "奶源布局"
+      ],
+      "gleif": {
+        "lei": "3003002Q2A863JPQFH06",
+        "legalName": "内蒙古伊利实业集团股份有限公司",
+        "country": "CN",
+        "city": "呼伦贝尔市",
+        "region": "CN-NM",
+        "legalForm": "ECAK",
+        "registrationDate": "1993-06-03",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "内蒙古伊利实业集团股份有限公司"
+      }
+    },
+    {
+      "id": "danone",
+      "name": "达能集团",
+      "nameEn": "Danone S.A.",
+      "country": "法国",
+      "hq": "巴黎",
+      "founded": 1919,
+      "ticker": "BN.PA",
+      "size": "巨头",
+      "classCode": "1050",
+      "business": "乳制品、饮用水与特殊营养品制造",
+      "products": "酸奶、婴幼儿营养品、医学营养品、瓶装水",
+      "desc": "欧洲最大的乳制品企业之一，以\"基础乳制品 + 植物基 + 专业特殊营养\"三大板块运营。旗下拥有爱他美、依云等品牌。",
+      "tags": [
+        "酸奶",
+        "特殊营养",
+        "跨国品牌"
+      ],
+      "gleif": {
+        "lei": "213800FZFL4588HMEM49",
+        "legalName": "DANONE PORTUGAL S.A.",
+        "country": "PT",
+        "city": "CASTELO BRANCO",
+        "region": "PT-05",
+        "legalForm": "DFE5",
+        "registrationDate": "2006-10-20",
+        "registrationStatus": "ISSUED",
+        "score": 0.857,
+        "queriedAs": "Danone S.A."
+      }
+    },
+    {
+      "id": "nestle",
+      "name": "雀巢公司",
+      "nameEn": "Nestlé S.A.",
+      "country": "瑞士",
+      "hq": "沃韦",
+      "founded": 1866,
+      "ticker": "NESN.SW",
+      "size": "巨头",
+      "classCode": "1080",
+      "business": "多品类包装食品与饮料制造",
+      "products": "速溶咖啡、婴幼儿食品、巧克力、调味品、宠物食品、瓶装水",
+      "desc": "全球最大的食品饮料公司，通过雀巢咖啡、奇巧、太太乐等数千个品牌覆盖从早餐到宠物的全部食用场景，以并购整合与本地化研发见长。",
+      "tags": [
+        "全球第一",
+        "多品牌",
+        "咖啡"
+      ],
+      "gleif": {
+        "lei": "KY37LUS27QQX7BB93L28",
+        "legalName": "NESTLÉ S.A.",
+        "country": "CH",
+        "city": "VEVEY",
+        "region": "CH-VD",
+        "legalForm": "MVII",
+        "registrationDate": "2000-06-25",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Nestlé S.A."
+      }
+    },
+    {
+      "id": "kweichow-moutai",
+      "name": "贵州茅台酒股份有限公司",
+      "nameEn": "Kweichow Moutai Co., Ltd.",
+      "country": "中国",
+      "hq": "贵州 仁怀",
+      "founded": 1999,
+      "ticker": "600519.SH",
+      "size": "巨头",
+      "classCode": "1101",
+      "business": "酱香型白酒酿造与销售",
+      "products": "飞天茅台酒、茅台系列酒、生肖酒",
+      "desc": "中国白酒行业市值最高的企业。核心产能受限于赤水河流域特定的微生物环境与五年以上基酒陈酿周期，供给刚性叠加品牌属性，形成独特的价格结构。",
+      "tags": [
+        "酱香白酒",
+        "赤水河",
+        "稀缺产能"
+      ]
+    },
+    {
+      "id": "cocacola",
+      "name": "可口可乐公司",
+      "nameEn": "The Coca-Cola Company",
+      "country": "美国",
+      "hq": "佐治亚州 亚特兰大",
+      "founded": 1886,
+      "ticker": "KO.NYSE",
+      "size": "巨头",
+      "classCode": "1104",
+      "business": "浓缩液生产与品牌授权经营",
+      "products": "碳酸饮料浓缩液、果汁、即饮茶、水",
+      "desc": "全球最大的非酒精饮料公司。采用\"浓缩液制造 + 特许装瓶\"模式：公司掌握配方与品牌，装瓶商负责灌装分销，形成轻资产的全球网络。",
+      "tags": [
+        "浓缩液模式",
+        "品牌授权",
+        "全球化"
+      ],
+      "sec": {
+        "cik": "0000021344",
+        "legalName": "COCA COLA CO",
+        "ticker": "KO",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000021344&type=10-K",
+        "sic": "2080",
+        "sicDescription": "Beverages",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "ab-inbev",
+      "name": "百威英博集团",
+      "nameEn": "Anheuser-Busch InBev SA/NV",
+      "country": "比利时",
+      "hq": "鲁汶",
+      "founded": 1852,
+      "ticker": "BUD.NYSE",
+      "size": "巨头",
+      "classCode": "1105",
+      "business": "啤酒酿造与全球品牌运营",
+      "products": "百威、科罗娜、时代啤酒、哈尔滨啤酒",
+      "desc": "全球最大的啤酒集团，通过持续的大型并购整合形成跨区域品牌矩阵。以极致的成本控制与\"高端化\"定价策略著称。",
+      "tags": [
+        "啤酒",
+        "并购整合",
+        "高端化"
+      ],
+      "gleif": {
+        "lei": "25490092Q5VXCVX0S696",
+        "legalName": "ANHEUSER-BUSCH INBEV SA/NV ADRHEDGED",
+        "country": "US",
+        "city": "DOVER",
+        "region": "US-DE",
+        "legalForm": "8888",
+        "registrationDate": "2024-09-20",
+        "registrationStatus": "ISSUED",
+        "score": 0.75,
+        "queriedAs": "Anheuser-Busch InBev SA/NV"
+      },
+      "sec": {
+        "cik": "0001668717",
+        "legalName": "Anheuser-Busch InBev SA/NV",
+        "ticker": "BUD",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001668717&type=10-K",
+        "sic": "2082",
+        "sicDescription": "Malt Beverages",
+        "stateOfIncorporation": "C9"
+      }
+    },
+    {
+      "id": "tsingtao",
+      "name": "青岛啤酒股份有限公司",
+      "nameEn": "Tsingtao Brewery Company Limited",
+      "country": "中国",
+      "hq": "山东 青岛",
+      "founded": 1903,
+      "ticker": "600600.SH / 0168.HK",
+      "size": "大型",
+      "classCode": "1105",
+      "business": "啤酒酿造与销售",
+      "products": "青岛啤酒、崂山啤酒、经典 1903 系列",
+      "desc": "中国历史最悠久的啤酒企业，也是最早国际化的中国消费品牌之一。以山东为核心基地市场，逐步推进高端化产品结构升级。",
+      "tags": [
+        "啤酒",
+        "百年品牌",
+        "高端化"
+      ],
+      "gleif": {
+        "lei": "300300OJ7D0Q1ESE8L15",
+        "legalName": "青岛啤酒股份有限公司",
+        "country": "CN",
+        "city": "青岛市",
+        "region": "CN-SD",
+        "legalForm": "ECAK",
+        "registrationDate": "1995-12-26",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "青岛啤酒股份有限公司"
+      }
+    },
+    {
+      "id": "weichai-tex",
+      "name": "魏桥纺织股份有限公司",
+      "nameEn": "Weiqiao Textile Company Limited",
+      "country": "中国",
+      "hq": "山东 滨州",
+      "founded": 1999,
+      "ticker": "2698.HK",
+      "size": "巨头",
+      "classCode": "1311",
+      "business": "棉纱、坯布的一体化纺纱织造",
+      "products": "棉纱、坯布、牛仔布、家纺织物",
+      "desc": "全球最大的棉纺织企业之一，母公司魏桥创业集团自建电厂与完整产业链，以\"纺织—染整—服装\"纵向一体化形成成本优势。",
+      "tags": [
+        "棉纺",
+        "自备电厂",
+        "一体化"
+      ],
+      "gleif": {
+        "lei": "52990084P600SDPDIU34",
+        "legalName": "Weiqiao Textile Company Limited",
+        "country": "CN",
+        "city": "Shandong",
+        "region": "CN-SD",
+        "legalForm": "ECAK",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "Weiqiao Textile Company Limited"
+      }
+    },
+    {
+      "id": "luolai",
+      "name": "罗莱生活科技股份有限公司",
+      "nameEn": "LUOLAI Lifestyle Technology Co., Ltd.",
+      "country": "中国",
+      "hq": "江苏 南通",
+      "founded": 1992,
+      "ticker": "002293.SZ",
+      "size": "中型",
+      "classCode": "1392",
+      "business": "家用纺织品设计、制造与品牌零售",
+      "products": "床上用品、芯被类、家居服、软装套件",
+      "desc": "中国家纺行业头部品牌运营商，以南通家纺产业集群为供应基础，通过直营与加盟渠道运营罗莱、LOVO 等品牌。",
+      "tags": [
+        "家纺",
+        "品牌零售"
+      ]
+    },
+    {
+      "id": "shenzhou-intl",
+      "name": "申洲国际集团控股有限公司",
+      "nameEn": "Shenzhou International Group Holdings Limited",
+      "country": "中国",
+      "hq": "浙江 宁波",
+      "founded": 1988,
+      "ticker": "2313.HK",
+      "size": "巨头",
+      "classCode": "1410",
+      "business": "针织服装面料织造、染整与成衣制造一体化",
+      "products": "运动服装、休闲服装、内衣（OEM/ODM）",
+      "desc": "全球最大的纵向一体化针织服装制造商，为耐克、阿迪达斯、优衣库等品牌代工。自建面料工厂使其在交期与品质上具备难以复制的壁垒。",
+      "tags": [
+        "针织代工",
+        "纵向一体化",
+        "大客户"
+      ],
+      "gleif": {
+        "lei": "529900B4W41TCUKJFM73",
+        "legalName": "Shenzhou International Group Holdings Limited",
+        "country": "KY",
+        "city": "Grand Cayman",
+        "region": "",
+        "legalForm": "8888",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "SHENZHOU INTERNATIONAL GROUP HOLDINGS LIMITED"
+      }
+    },
+    {
+      "id": "nike",
+      "name": "耐克公司",
+      "nameEn": "NIKE, Inc.",
+      "country": "美国",
+      "hq": "俄勒冈州 比弗顿",
+      "founded": 1964,
+      "ticker": "NKE.NYSE",
+      "size": "巨头",
+      "classCode": "1410",
+      "business": "运动服装与鞋类设计、品牌运营（制造外包）",
+      "products": "运动鞋、运动服装、运动装备、Jordan 品牌",
+      "desc": "全球最大的运动品牌。采用\"设计 + 营销 + 品牌\"为核心、制造全外包的模式，将生产环节集中于东亚与东南亚的代工体系。",
+      "tags": [
+        "运动品牌",
+        "轻资产",
+        "代工体系"
+      ],
+      "sec": {
+        "cik": "0000320187",
+        "legalName": "NIKE, Inc.",
+        "ticker": "NKE",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320187&type=10-K",
+        "sic": "3021",
+        "sicDescription": "Rubber & Plastics Footwear",
+        "stateOfIncorporation": "OR"
+      }
+    },
+    {
+      "id": "anta",
+      "name": "安踏体育用品有限公司",
+      "nameEn": "ANTA Sports Products Limited",
+      "country": "中国",
+      "hq": "福建 晋江",
+      "founded": 1991,
+      "ticker": "2020.HK",
+      "size": "巨头",
+      "classCode": "1520",
+      "business": "运动鞋服设计、制造与品牌零售",
+      "products": "安踏、FILA（中国）、始祖鸟、萨洛蒙、迪桑特",
+      "desc": "中国最大的体育用品集团。通过收购 FILA 中国业务与亚玛芬体育，构建起从大众到高端的品牌金字塔。晋江是其鞋类制造与供应链基地。",
+      "tags": [
+        "多品牌",
+        "亚玛芬",
+        "晋江鞋业"
+      ],
+      "gleif": {
+        "lei": "529900291XG0CTK4LF95",
+        "legalName": "ANTA Sports Products Limited",
+        "country": "KY",
+        "city": "George Town",
+        "region": "",
+        "legalForm": "UE3G",
+        "registrationDate": "2007-02-07",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "ANTA SPORTS PRODUCTS LIMITED"
+      }
+    },
+    {
+      "id": "yueyuen",
+      "name": "裕元工业（集团）有限公司",
+      "nameEn": "Yue Yuen Industrial (Holdings) Limited",
+      "country": "中国",
+      "hq": "广东 东莞 / 香港",
+      "founded": 1988,
+      "ticker": "0551.HK",
+      "size": "巨头",
+      "classCode": "1520",
+      "business": "运动鞋与休闲鞋代工制造",
+      "products": "运动鞋、休闲鞋、鞋材（OEM/ODM）",
+      "desc": "全球最大的运动鞋制造商，为耐克、阿迪达斯等品牌代工，产能分布于中国、越南、印尼等地，是跨国品牌供应链的核心环节。",
+      "tags": [
+        "鞋类代工",
+        "产能外迁",
+        "大客户"
+      ],
+      "gleif": {
+        "lei": "254900YUFIBANZ1XU687",
+        "legalName": "Yue Yuen Industrial (Holdings) Limited",
+        "country": "BM",
+        "city": "Hamilton",
+        "region": "",
+        "legalForm": "7AS7",
+        "registrationDate": "1992-05-11",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Yue Yuen Industrial (Holdings) Limited"
+      }
+    },
+    {
+      "id": "app-paper",
+      "name": "金光集团（亚洲浆纸业）",
+      "nameEn": "Asia Pulp & Paper (APP), Sinar Mas Group",
+      "country": "印度尼西亚",
+      "hq": "雅加达",
+      "founded": 1972,
+      "size": "巨头",
+      "classCode": "1701",
+      "business": "纸浆、文化纸与生活用纸一体化生产",
+      "products": "纸浆、铜版纸、复印纸、生活用纸、包装纸",
+      "desc": "由印尼金光集团（Sinar Mas）控股的浆纸一体化企业，在林浆纸一体化模式下运营大规模速生林与制浆造纸基地，产品覆盖全球市场。",
+      "tags": [
+        "浆纸一体化",
+        "速生林",
+        "金光集团"
+      ]
+    },
+    {
+      "id": "shanying",
+      "name": "山鹰国际控股股份公司",
+      "nameEn": "Shanying International Holdings Co., Ltd.",
+      "country": "中国",
+      "hq": "安徽 马鞍山",
+      "founded": 1999,
+      "ticker": "600567.SH",
+      "size": "大型",
+      "classCode": "1702",
+      "business": "再生纸生产与瓦楞纸箱包装制造",
+      "products": "箱板纸、瓦楞原纸、瓦楞纸箱、纸包装制品",
+      "desc": "中国包装纸行业龙头企业，以废纸回收为原料生产箱板瓦楞纸，并向下游纸箱包装延伸，服务家电、电商、快递等对包装需求密集的行业。",
+      "tags": [
+        "再生纸",
+        "纸包装",
+        "电商物流"
+      ],
+      "gleif": {
+        "lei": "300300189RUIO9PF4B47",
+        "legalName": "山鹰国际控股股份公司",
+        "country": "CN",
+        "city": "马鞍山市",
+        "region": "CN-AH",
+        "legalForm": "ECAK",
+        "registrationDate": "1999-10-19",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "山鹰国际控股股份公司"
+      }
+    },
+    {
+      "id": "sinopec",
+      "name": "中国石油化工股份有限公司",
+      "nameEn": "China Petroleum & Chemical Corporation (Sinopec)",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2000,
+      "ticker": "600028.SH / 0386.HK",
+      "size": "巨头",
+      "classCode": "1920",
+      "business": "原油炼制与成品油销售",
+      "products": "汽油、柴油、航空煤油、润滑油、石化原料",
+      "desc": "全球炼油能力最大的企业。区别于中石油的\"上游为主\"，中石化以炼化与销售为重，拥有覆盖全国加油站网络与大型炼化一体化基地。",
+      "tags": [
+        "炼化",
+        "加油站网络",
+        "三桶油"
+      ],
+      "gleif": {
+        "lei": "529900A2OB24EZ5B3J19",
+        "legalName": "China Petroleum & Chemical Corporation",
+        "country": "CN",
+        "city": "Peking",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "CHINA PETROLEUM & CHEMICAL CORPORATION"
+      }
+    },
+    {
+      "id": "wanhua",
+      "name": "万华化学集团股份有限公司",
+      "nameEn": "Wanhua Chemical Group Co., Ltd.",
+      "country": "中国",
+      "hq": "山东 烟台",
+      "founded": 1998,
+      "ticker": "600309.SH",
+      "size": "巨头",
+      "classCode": "2011",
+      "business": "聚氨酯等基础化学品制造",
+      "products": "MDI、TDI、聚醚多元醇、石化产品、精细化学品",
+      "desc": "全球最大的 MDI 生产商。其自主掌握的 MDI 技术打破了跨国公司的长期垄断，形成\"聚氨酯 + 石化 + 精细化学品 + 新材料\"四大板块。",
+      "tags": [
+        "MDI",
+        "技术自主",
+        "化工龙头"
+      ],
+      "gleif": {
+        "lei": "3003002H0G2KDG6CR124",
+        "legalName": "万华化学集团股份有限公司",
+        "country": "CN",
+        "city": "烟台市",
+        "region": "CN-SD",
+        "legalForm": "ECAK",
+        "registrationDate": "1998-12-15",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "万华化学集团股份有限公司"
+      }
+    },
+    {
+      "id": "basf",
+      "name": "巴斯夫欧洲公司",
+      "nameEn": "BASF SE",
+      "country": "德国",
+      "hq": "路德维希港",
+      "founded": 1865,
+      "ticker": "BAS.DE",
+      "size": "巨头",
+      "classCode": "2011",
+      "business": "基础化学品、中间体与特种化学品制造",
+      "products": "基础化学品、催化剂、农化产品、工程塑料、涂料",
+      "desc": "全球最大的化工企业，以德国路德维希港\"一体化生产基地\"（Verbund）闻名——原料、能量与物流在同一园区内循环利用。近年将化工基地大举投向中国湛江。",
+      "tags": [
+        "全球第一化工",
+        "Verbund",
+        "湛江基地"
+      ],
+      "gleif": {
+        "lei": "529900PM64WH8AF1E917",
+        "legalName": "BASF SE",
+        "country": "DE",
+        "city": "Ludwigshafen am Rhein",
+        "region": "DE-RP",
+        "legalForm": "SGST",
+        "registrationDate": "2008-01-13",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "BASF SE"
+      }
+    },
+    {
+      "id": "yuntianhua",
+      "name": "云南云天化股份有限公司",
+      "nameEn": "Yunnan Yuntianhua Co., Ltd.",
+      "country": "中国",
+      "hq": "云南 昆明",
+      "founded": 1997,
+      "ticker": "600096.SH",
+      "size": "大型",
+      "classCode": "2012",
+      "business": "磷肥、氮肥等化肥制造",
+      "products": "磷酸一铵、磷酸二铵、尿素、复合肥、磷矿采选",
+      "desc": "中国最大的磷肥生产企业之一，依托云南丰富的磷矿资源，形成\"磷矿采选—磷肥—精细磷化工\"一体化产业链。",
+      "tags": [
+        "磷肥",
+        "磷矿资源",
+        "一体化"
+      ]
+    },
+    {
+      "id": "pg",
+      "name": "宝洁公司",
+      "nameEn": "The Procter & Gamble Company",
+      "country": "美国",
+      "hq": "俄亥俄州 辛辛那提",
+      "founded": 1837,
+      "ticker": "PG.NYSE",
+      "size": "巨头",
+      "classCode": "2023",
+      "business": "日化用品制造与品牌运营",
+      "products": "洗发护发、洗涤剂、口腔护理、婴儿护理、美容护肤",
+      "desc": "全球最大的日用消费品公司之一，以多品牌战略与渠道分销能力见长。中国是其第二大市场，广州设有生产基地与研发中心。",
+      "tags": [
+        "日化",
+        "多品牌",
+        "渠道驱动"
+      ],
+      "gleif": {
+        "lei": "2572IBTT8CCZW6AU4141",
+        "legalName": "THE PROCTER & GAMBLE COMPANY",
+        "country": "US",
+        "city": "COLUMBUS",
+        "region": "US-OH",
+        "legalForm": "BTQ1",
+        "registrationDate": "1905-05-05",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "The Procter & Gamble Company"
+      },
+      "sec": {
+        "cik": "0000080424",
+        "legalName": "PROCTER & GAMBLE Co",
+        "ticker": "PG",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000080424&type=10-K",
+        "sic": "2840",
+        "sicDescription": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
+        "stateOfIncorporation": "OH"
+      }
+    },
+    {
+      "id": "hengrui",
+      "name": "江苏恒瑞医药股份有限公司",
+      "nameEn": "Jiangsu Hengrui Pharmaceuticals Co., Ltd.",
+      "country": "中国",
+      "hq": "江苏 连云港",
+      "founded": 1970,
+      "ticker": "600276.SH",
+      "size": "巨头",
+      "classCode": "2100",
+      "business": "创新药与仿制药研发、生产与销售",
+      "products": "抗肿瘤药、麻醉药、造影剂、胰岛素、PD-1 单抗",
+      "desc": "中国创新药代表性企业，从仿制药起家转向创新药研发。在抗肿瘤与麻醉领域产品线深厚，近年通过对外授权（License-out）加速国际化。",
+      "tags": [
+        "创新药",
+        "抗肿瘤",
+        "license-out"
+      ],
+      "gleif": {
+        "lei": "2549003BT1XS3SE3E448",
+        "legalName": "Jiangsu Hengrui Pharmaceuticals Co., Ltd.",
+        "country": "CN",
+        "city": "Lianyungang",
+        "region": "",
+        "legalForm": "ECAK",
+        "registrationDate": "1997-07-28",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "Jiangsu Hengrui Pharmaceuticals Co., Ltd."
+      }
+    },
+    {
+      "id": "pfizer",
+      "name": "辉瑞公司",
+      "nameEn": "Pfizer Inc.",
+      "country": "美国",
+      "hq": "纽约",
+      "founded": 1849,
+      "ticker": "PFE.NYSE",
+      "size": "巨头",
+      "classCode": "2100",
+      "business": "创新药与疫苗研发、生产与销售",
+      "products": "抗感染药、疫苗、肿瘤药、抗炎药、罕见病药物",
+      "desc": "全球领先的制药企业。以大规模并购扩充管线著称，曾与 BioNTech 合作开发 mRNA 新冠疫苗。近年通过收购 Seagen 加码肿瘤领域。",
+      "tags": [
+        "制药巨头",
+        "疫苗",
+        "并购管线"
+      ],
+      "gleif": {
+        "lei": "765LHXWGK1KXCLTFYQ30",
+        "legalName": "PFIZER INC.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1942-06-02",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Pfizer Inc."
+      },
+      "sec": {
+        "cik": "0000078003",
+        "legalName": "PFIZER INC",
+        "ticker": "PFE",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000078003&type=10-K",
+        "sic": "2834",
+        "sicDescription": "Pharmaceutical Preparations",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "novonordisk",
+      "name": "诺和诺德公司",
+      "nameEn": "Novo Nordisk A/S",
+      "country": "丹麦",
+      "hq": "哥本哈根",
+      "founded": 1923,
+      "ticker": "NVO.NYSE",
+      "size": "巨头",
+      "classCode": "2100",
+      "business": "糖尿病与肥胖症治疗药物研发与生产",
+      "products": "胰岛素、GLP-1 受体激动剂（司美格鲁肽）、血友病用药",
+      "desc": "全球糖尿病治疗领域龙头，凭借司美格鲁肽（Ozempic / Wegovy）在减重适应症上的突破，成为欧洲市值最高的公司。",
+      "tags": [
+        "GLP-1",
+        "糖尿病",
+        "减重"
+      ],
+      "gleif": {
+        "lei": "549300DAQ1CVT6CXN342",
+        "legalName": "NOVO NORDISK A/S",
+        "country": "DK",
+        "city": "Bagsværd",
+        "region": "DK-84",
+        "legalForm": "ZRPO",
+        "registrationDate": "1931-11-28",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Novo Nordisk A/S"
+      },
+      "sec": {
+        "cik": "0000353278",
+        "legalName": "NOVO NORDISK A S",
+        "ticker": "NVO",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000353278&type=10-K",
+        "sic": "2834",
+        "sicDescription": "Pharmaceutical Preparations",
+        "stateOfIncorporation": ""
+      }
+    },
+    {
+      "id": "michelin",
+      "name": "米其林集团",
+      "nameEn": "Compagnie Générale des Établissements Michelin",
+      "country": "法国",
+      "hq": "克莱蒙费朗",
+      "founded": 1889,
+      "ticker": "ML.PA",
+      "size": "巨头",
+      "classCode": "2211",
+      "business": "轮胎制造与出行服务",
+      "products": "乘用车轮胎、卡客车轮胎、工程轮胎、航空轮胎、地图服务",
+      "desc": "全球轮胎行业技术标杆，也是《米其林指南》的出版方。近年从\"卖轮胎\"向\"卖出行服务\"延伸，提供车队管理与轮胎租赁方案。",
+      "tags": [
+        "轮胎",
+        "出行服务",
+        "技术标杆"
+      ]
+    },
+    {
+      "id": "linglong",
+      "name": "山东玲珑轮胎股份有限公司",
+      "nameEn": "Shandong Linglong Tyre Co., Ltd.",
+      "country": "中国",
+      "hq": "山东 招远",
+      "founded": 1975,
+      "ticker": "601966.SH",
+      "size": "大型",
+      "classCode": "2211",
+      "business": "轮胎研发、制造与销售",
+      "products": "乘用车胎、卡客车胎、工程胎",
+      "desc": "中国轮胎行业头部企业，为多家整车厂提供原厂配套，并在泰国、塞尔维亚等地建设海外生产基地以应对贸易壁垒。",
+      "tags": [
+        "轮胎",
+        "原厂配套",
+        "海外产能"
+      ],
+      "gleif": {
+        "lei": "3003003R54QIO1CPVS32",
+        "legalName": "山东玲珑轮胎股份有限公司",
+        "country": "CN",
+        "city": "烟台市",
+        "region": "CN-SD",
+        "legalForm": "ECAK",
+        "registrationDate": "1994-06-05",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "山东玲珑轮胎股份有限公司"
+      }
+    },
+    {
+      "id": "baowu",
+      "name": "中国宝武钢铁集团有限公司",
+      "nameEn": "China Baowu Steel Group Corporation Limited",
+      "country": "中国",
+      "hq": "上海",
+      "founded": 2016,
+      "size": "巨头",
+      "classCode": "2410",
+      "business": "钢铁冶炼与钢铁产品制造",
+      "products": "热轧板卷、冷轧板卷、硅钢、汽车板、不锈钢、特钢",
+      "desc": "全球产量最大的钢铁集团。由宝钢与武钢重组而成，后又整合马钢、太钢、重钢等，是中国钢铁行业集中度提升的主要承载主体。",
+      "tags": [
+        "全球第一产量",
+        "央企重组",
+        "硅钢"
+      ],
+      "gleif": {
+        "lei": "300300G0LCC0PRLYMN91",
+        "legalName": "中国宝武钢铁集团有限公司",
+        "country": "CN",
+        "city": "浦东新区",
+        "region": "CN-SH",
+        "legalForm": "ECAK",
+        "registrationDate": "1991-12-31",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "中国宝武钢铁集团有限公司"
+      }
+    },
+    {
+      "id": "arcelormittal",
+      "name": "安赛乐米塔尔公司",
+      "nameEn": "ArcelorMittal S.A.",
+      "country": "卢森堡",
+      "hq": "卢森堡市",
+      "founded": 2006,
+      "ticker": "MT.NYSE",
+      "size": "巨头",
+      "classCode": "2410",
+      "business": "全球钢铁冶炼与加工",
+      "products": "扁平材、长材、钢管、电工钢、矿业原料",
+      "desc": "由米塔尔收购安赛乐组建，长期位居全球钢铁产量前列。生产基地遍及欧洲、美洲、非洲与亚洲，是典型的跨国钢铁集团。",
+      "tags": [
+        "跨国钢铁",
+        "并购整合"
+      ],
+      "sec": {
+        "cik": "0001243429",
+        "legalName": "ArcelorMittal",
+        "ticker": "MT",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001243429&type=10-K",
+        "sic": "3312",
+        "sicDescription": "Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",
+        "stateOfIncorporation": ""
+      }
+    },
+    {
+      "id": "chalco",
+      "name": "中国铝业股份有限公司",
+      "nameEn": "Aluminum Corporation of China Limited (Chalco)",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2001,
+      "ticker": "601600.SH / 2600.HK",
+      "size": "巨头",
+      "classCode": "2420",
+      "business": "铝土矿开采、氧化铝与电解铝生产",
+      "products": "氧化铝、电解铝、铝加工材、镓、煤炭",
+      "desc": "中国最大的氧化铝与电解铝生产商之一，拥有从铝土矿到铝加工的完整产业链。铝的轻量化属性使其深度绑定汽车、建筑与电力行业。",
+      "tags": [
+        "电解铝",
+        "氧化铝",
+        "轻量化"
+      ]
+    },
+    {
+      "id": "honglu",
+      "name": "安徽鸿路钢结构（集团）股份有限公司",
+      "nameEn": "Anhui Honglu Steel Structure (Group) Co., Ltd.",
+      "country": "中国",
+      "hq": "安徽 合肥",
+      "founded": 2002,
+      "ticker": "002541.SZ",
+      "size": "大型",
+      "classCode": "2511",
+      "business": "钢结构件设计、制造与安装",
+      "products": "建筑钢结构、桥梁钢结构、装配式建筑构件",
+      "desc": "中国大型钢结构制造企业，以工厂预制 + 现场装配的模式服务工业厂房、高层建筑与桥梁工程，是装配式建筑产业链的关键环节。",
+      "tags": [
+        "钢结构",
+        "装配式建筑"
+      ],
+      "gleif": {
+        "lei": "300300P819515FEOQM63",
+        "legalName": "安徽鸿路钢结构（集团）股份有限公司",
+        "country": "CN",
+        "city": "合肥市",
+        "region": "CN-AH",
+        "legalForm": "ECAK",
+        "registrationDate": "2002-09-18",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "安徽鸿路钢结构（集团）股份有限公司"
+      }
+    },
+    {
+      "id": "tsmc",
+      "name": "台湾积体电路制造股份有限公司",
+      "nameEn": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "country": "中国台湾",
+      "hq": "新竹",
+      "founded": 1987,
+      "ticker": "2330.TW / TSM.NYSE",
+      "size": "巨头",
+      "classCode": "2619",
+      "business": "纯晶圆代工（Foundry）",
+      "products": "先进制程晶圆代工、成熟制程代工、先进封装（CoWoS）",
+      "desc": "全球最大的半导体晶圆代工厂，首创\"只代工、不设计\"的商业模式。在 5nm 及以下先进制程上占据近乎垄断的份额，是 AI 算力芯片的核心产能瓶颈所在。",
+      "tags": [
+        "晶圆代工",
+        "先进制程",
+        "CoWoS"
+      ],
+      "sec": {
+        "cik": "0001046179",
+        "legalName": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+        "ticker": "TSM",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001046179&type=10-K",
+        "sic": "3674",
+        "sicDescription": "Semiconductors & Related Devices",
+        "stateOfIncorporation": ""
+      }
+    },
+    {
+      "id": "intel",
+      "name": "英特尔公司",
+      "nameEn": "Intel Corporation",
+      "country": "美国",
+      "hq": "加利福尼亚州 圣克拉拉",
+      "founded": 1968,
+      "ticker": "INTC.NASDAQ",
+      "size": "巨头",
+      "classCode": "2619",
+      "business": "半导体芯片设计与制造（IDM）",
+      "products": "CPU、晶圆代工服务、FPGA、网络芯片",
+      "desc": "x86 架构的发明者与 PC 时代的芯片霸主。采用 IDM（设计与制造一体）模式，现正推进制程追赶与代工业务转型。",
+      "tags": [
+        "IDM",
+        "x86",
+        "制程追赶"
+      ],
+      "gleif": {
+        "lei": "KNX4USFCNGPY45LOCE31",
+        "legalName": "INTEL CORPORATION",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1989-03-01",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "INTEL CORPORATION"
+      },
+      "sec": {
+        "cik": "0000050863",
+        "legalName": "INTEL CORP",
+        "ticker": "INTC",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000050863&type=10-K",
+        "sic": "3674",
+        "sicDescription": "Semiconductors & Related Devices",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "lenovo",
+      "name": "联想集团有限公司",
+      "nameEn": "Lenovo Group Limited",
+      "country": "中国",
+      "hq": "北京 / 香港",
+      "founded": 1984,
+      "ticker": "0992.HK",
+      "size": "巨头",
+      "classCode": "2620",
+      "business": "个人电脑、服务器与智能设备制造",
+      "products": "ThinkPad / 拯救者笔记本、台式机、服务器、平板、手机",
+      "desc": "全球出货量最大的 PC 制造商。通过收购 IBM PC 业务与摩托罗拉移动实现国际化，形成\"智能设备 + 基础设施方案 + 方案服务\"三大业务。",
+      "tags": [
+        "PC 全球第一",
+        "并购 IBM",
+        "服务器"
+      ],
+      "gleif": {
+        "lei": "254900VUZRGD5U73RE46",
+        "legalName": "LENOVO GROUP LIMITED",
+        "country": "HK",
+        "city": "Hong Kong",
+        "region": "",
+        "legalForm": "254M",
+        "registrationDate": "1993-10-05",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Lenovo Group Limited"
+      }
+    },
+    {
+      "id": "apple",
+      "name": "苹果公司",
+      "nameEn": "Apple Inc.",
+      "country": "美国",
+      "hq": "加利福尼亚州 库比蒂诺",
+      "founded": 1976,
+      "ticker": "AAPL.NASDAQ",
+      "size": "巨头",
+      "classCode": "2620",
+      "business": "消费电子硬件设计、软件与服务生态运营",
+      "products": "iPhone、Mac、iPad、Apple Watch、AirPods、iOS 与 App Store",
+      "desc": "全球市值最高的公司之一。以自研芯片（M 系列、A 系列）与封闭生态构筑壁垒，硬件设计自有、制造外包给台积电与富士康等代工体系。",
+      "tags": [
+        "消费电子",
+        "自研芯片",
+        "生态闭环"
+      ],
+      "gleif": {
+        "lei": "HWUPKR0MPOU8FGXBT394",
+        "legalName": "Apple Inc.",
+        "country": "US",
+        "city": "Glendale",
+        "region": "US-CA",
+        "legalForm": "H1UM",
+        "registrationDate": "1977-01-03",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "APPLE INC."
+      },
+      "sec": {
+        "cik": "0000320193",
+        "legalName": "Apple Inc.",
+        "ticker": "AAPL",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320193&type=10-K",
+        "sic": "3571",
+        "sicDescription": "Electronic Computers",
+        "stateOfIncorporation": "CA"
+      }
+    },
+    {
+      "id": "huawei",
+      "name": "华为技术有限公司",
+      "nameEn": "Huawei Technologies Co., Ltd.",
+      "country": "中国",
+      "hq": "广东 深圳",
+      "founded": 1987,
+      "size": "巨头",
+      "classCode": "2630",
+      "business": "通信设备、终端与企业 ICT 解决方案",
+      "products": "5G 基站、光传输、路由器、智能手机、昇腾 AI 芯片、鸿蒙系统",
+      "desc": "全球领先的通信设备供应商，在 5G 专利与基站市场份额居前。近年受外部制裁影响，转向自研芯片与鸿蒙生态，并拓展智能汽车解决方案业务。",
+      "tags": [
+        "5G",
+        "自研芯片",
+        "鸿蒙"
+      ],
+      "gleif": {
+        "lei": "300300G4NLFHF8PDPY52",
+        "legalName": "华为技术有限公司",
+        "country": "CN",
+        "city": "深圳市",
+        "region": "CN-GD",
+        "legalForm": "ECAK",
+        "registrationDate": "1987-09-14",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "华为技术有限公司"
+      }
+    },
+    {
+      "id": "zte",
+      "name": "中兴通讯股份有限公司",
+      "nameEn": "ZTE Corporation",
+      "country": "中国",
+      "hq": "广东 深圳",
+      "founded": 1985,
+      "ticker": "000063.SZ / 0763.HK",
+      "size": "巨头",
+      "classCode": "2630",
+      "business": "通信网络设备与终端研发制造",
+      "products": "5G 基站、光网络设备、核心网、服务器、手机",
+      "desc": "中国两大通信设备商之一，业务覆盖无线、有线、核心网与终端，在 5G 标准专利上具有较高占比，同时是国内主要的服务器供应商之一。",
+      "tags": [
+        "通信设备",
+        "5G 专利",
+        "服务器"
+      ],
+      "gleif": {
+        "lei": "52990091DL79U1DJ9L47",
+        "legalName": "ZTE Corporation",
+        "country": "CN",
+        "city": "Shenzhen",
+        "region": "CN-GD",
+        "legalForm": "8888",
+        "registrationDate": "",
+        "registrationStatus": "DUPLICATE",
+        "score": 1,
+        "queriedAs": "ZTE CORPORATION"
+      }
+    },
+    {
+      "id": "hikvision",
+      "name": "杭州海康威视数字技术股份有限公司",
+      "nameEn": "Hangzhou Hikvision Digital Technology Co., Ltd.",
+      "country": "中国",
+      "hq": "浙江 杭州",
+      "founded": 2001,
+      "ticker": "002415.SZ",
+      "size": "巨头",
+      "classCode": "2651",
+      "business": "视频监控与智能感知设备制造",
+      "products": "监控摄像机、存储设备、门禁、机器视觉、雷达",
+      "desc": "全球最大的视频监控设备制造商。业务从安防视频延伸至机器视觉、汽车电子与机器人，是\"感知—算法—云平台\"体系的典型厂商。",
+      "tags": [
+        "安防",
+        "机器视觉",
+        "全球第一"
+      ],
+      "gleif": {
+        "lei": "3003000T24CMHQ382Y71",
+        "legalName": "杭州海康威视数字技术股份有限公司",
+        "country": "CN",
+        "city": "杭州市",
+        "region": "CN-ZJ",
+        "legalForm": "ECAK",
+        "registrationDate": "2001-11-29",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "杭州海康威视数字技术股份有限公司"
+      }
+    },
+    {
+      "id": "catl",
+      "name": "宁德时代新能源科技股份有限公司",
+      "nameEn": "Contemporary Amperex Technology Co., Limited (CATL)",
+      "country": "中国",
+      "hq": "福建 宁德",
+      "founded": 2011,
+      "ticker": "300750.SZ",
+      "size": "巨头",
+      "classCode": "2720",
+      "business": "动力电池与储能电池研发制造",
+      "products": "三元锂电池、磷酸铁锂电池、储能系统、电池回收",
+      "desc": "全球动力电池装机量第一的企业。以麒麟电池、钠离子电池等技术路线引领行业，客户覆盖全球主流车企，并在欧洲、北美布局海外工厂。",
+      "tags": [
+        "动力电池",
+        "全球第一",
+        "储能"
+      ],
+      "gleif": {
+        "lei": "300300KINDY1K0E9I032",
+        "legalName": "宁德时代新能源科技股份有限公司",
+        "country": "CN",
+        "city": "宁德市",
+        "region": "CN-FJ",
+        "legalForm": "ECAK",
+        "registrationDate": "2011-12-15",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "宁德时代新能源科技股份有限公司"
+      }
+    },
+    {
+      "id": "schneider",
+      "name": "施耐德电气公司",
+      "nameEn": "Schneider Electric SE",
+      "country": "法国",
+      "hq": "吕埃-马尔迈松",
+      "founded": 1836,
+      "ticker": "SU.PA",
+      "size": "巨头",
+      "classCode": "2710",
+      "business": "配电设备、工业自动化与能效管理",
+      "products": "断路器、配电柜、变频器、UPS、楼宇自动化系统",
+      "desc": "全球能源管理与自动化领域的领先企业。业务围绕\"电气化 + 数字化\"展开，覆盖数据中心、楼宇、工业与基础设施四大终端市场。",
+      "tags": [
+        "配电",
+        "能源管理",
+        "数据中心"
+      ],
+      "gleif": {
+        "lei": "969500A1YF1XUYYXS284",
+        "legalName": "SCHNEIDER ELECTRIC SE",
+        "country": "FR",
+        "city": "Paris",
+        "region": "FR-IDF",
+        "legalForm": "TPNT",
+        "registrationDate": "1954-08-10",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Schneider Electric SE"
+      }
+    },
+    {
+      "id": "foshan-light",
+      "name": "佛山电器照明股份有限公司",
+      "nameEn": "Foshan Electrical and Lighting Co., Ltd.",
+      "country": "中国",
+      "hq": "广东 佛山",
+      "founded": 1958,
+      "ticker": "000541.SZ",
+      "size": "中型",
+      "classCode": "2740",
+      "business": "照明器具研发、制造与销售",
+      "products": "LED 灯泡、灯具、车灯、智能照明",
+      "desc": "中国老牌照明企业，从白炽灯时代延续至 LED 时代。近年来向智能照明与车灯业务拓展，作为国资控股企业推进渠道改造。",
+      "tags": [
+        "LED",
+        "照明",
+        "老牌国企"
+      ]
+    },
+    {
+      "id": "sany",
+      "name": "三一重工股份有限公司",
+      "nameEn": "Sany Heavy Industry Co., Ltd.",
+      "country": "中国",
+      "hq": "湖南 长沙",
+      "founded": 1994,
+      "ticker": "600031.SH",
+      "size": "巨头",
+      "classCode": "2822",
+      "business": "工程机械研发与制造",
+      "products": "混凝土泵车、挖掘机、起重机、路面机械、桩工机械",
+      "desc": "全球领先的工程机械制造商。混凝土泵车是其标志性产品，挖掘机销量居全球前列。其\"灯塔工厂\"代表了中国装备制造的智能化水平。",
+      "tags": [
+        "工程机械",
+        "灯塔工厂",
+        "全球化"
+      ],
+      "gleif": {
+        "lei": "3003001FS86S7NYOHV89",
+        "legalName": "三一重工股份有限公司",
+        "country": "CN",
+        "city": "昌平区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "1994-11-21",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "三一重工股份有限公司"
+      }
+    },
+    {
+      "id": "caterpillar",
+      "name": "卡特彼勒公司",
+      "nameEn": "Caterpillar Inc.",
+      "country": "美国",
+      "hq": "伊利诺伊州 迪尔菲尔德",
+      "founded": 1925,
+      "ticker": "CAT.NYSE",
+      "size": "巨头",
+      "classCode": "2822",
+      "business": "工程机械、矿用设备与发动机",
+      "products": "挖掘机、推土机、矿卡、柴油发动机、燃气轮机",
+      "desc": "全球工程机械行业的标杆企业，产品线覆盖建筑、采矿、能源与运输。其经销商网络与二手设备残值管理体系是长期竞争优势。",
+      "tags": [
+        "工程机械",
+        "经销商网络",
+        "矿卡"
+      ],
+      "gleif": {
+        "lei": "WRJR7GS4GTRECRRTVX92",
+        "legalName": "CATERPILLAR INC.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1986-03-12",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Caterpillar Inc."
+      },
+      "sec": {
+        "cik": "0000018230",
+        "legalName": "CATERPILLAR INC",
+        "ticker": "CAT",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000018230&type=10-K",
+        "sic": "3531",
+        "sicDescription": "Construction Machinery & Equip",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "fanuc",
+      "name": "发那科公司",
+      "nameEn": "FANUC Corporation",
+      "country": "日本",
+      "hq": "山梨县 忍野村",
+      "founded": 1972,
+      "ticker": "6954.T",
+      "size": "巨头",
+      "classCode": "2829",
+      "business": "工业机器人与数控系统制造",
+      "products": "工业机器人、CNC 数控系统、注塑机、伺服系统",
+      "desc": "全球工业机器人\"四大家族\"之一，也是全球最大的数控系统供应商。以高度自动化的\"熄灯工厂\"生产机器人本身而闻名。",
+      "tags": [
+        "工业机器人",
+        "数控系统",
+        "四大家族"
+      ]
+    },
+    {
+      "id": "toyota",
+      "name": "丰田汽车公司",
+      "nameEn": "Toyota Motor Corporation",
+      "country": "日本",
+      "hq": "爱知县 丰田市",
+      "founded": 1937,
+      "ticker": "TM.NYSE / 7203.T",
+      "size": "巨头",
+      "classCode": "2910",
+      "business": "乘用车与商用车研发、制造与销售",
+      "products": "轿车、SUV、混动车、氢燃料电池车、雷克萨斯",
+      "desc": "全球销量最大的汽车集团。精益生产（TPS）体系是全球制造业的管理范本，混合动力技术路线使其在电动化转型中保持独特的成本与可靠性优势。",
+      "tags": [
+        "精益生产 TPS",
+        "混合动力",
+        "全球第一"
+      ],
+      "sec": {
+        "cik": "0001094517",
+        "legalName": "TOYOTA MOTOR CORP/",
+        "ticker": "TM",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001094517&type=10-K",
+        "sic": "3711",
+        "sicDescription": "Motor Vehicles & Passenger Car Bodies",
+        "stateOfIncorporation": "M0"
+      }
+    },
+    {
+      "id": "byd",
+      "name": "比亚迪股份有限公司",
+      "nameEn": "BYD Company Limited",
+      "country": "中国",
+      "hq": "广东 深圳",
+      "founded": 1995,
+      "ticker": "002594.SZ / 1211.HK",
+      "size": "巨头",
+      "classCode": "2910",
+      "business": "新能源汽车与动力电池研发制造",
+      "products": "纯电与插混乘用车、商用车、刀片电池、半导体",
+      "desc": "全球新能源汽车销量领先的企业。其核心竞争力来自高度垂直整合——电池、电机、电控、芯片乃至车规半导体均自研自产，成本控制能力突出。",
+      "tags": [
+        "新能源车",
+        "垂直整合",
+        "刀片电池"
+      ],
+      "gleif": {
+        "lei": "5299001O3LAFGRPZ3Y63",
+        "legalName": "BYD Electronic (International) Company Limited",
+        "country": "HK",
+        "city": "Hong Kong",
+        "region": "",
+        "legalForm": "EPG7",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 0.75,
+        "queriedAs": "BYD COMPANY LIMITED"
+      }
+    },
+    {
+      "id": "bosch",
+      "name": "博世集团",
+      "nameEn": "Robert Bosch GmbH",
+      "country": "德国",
+      "hq": "斯图加特",
+      "founded": 1886,
+      "size": "巨头",
+      "classCode": "2930",
+      "business": "汽车零部件与工业技术、消费品",
+      "products": "电喷系统、制动系统、传感器、自动驾驶方案、电动工具、家电",
+      "desc": "全球最大的汽车零部件供应商。以\"汽车与智能交通技术\"为核心，同时经营工业技术、消费品与能源建筑技术四大板块，是德国工业的代表性家族企业。",
+      "tags": [
+        "Tier1",
+        "传感器",
+        "家族企业"
+      ]
+    },
+    {
+      "id": "csic-ship",
+      "name": "中国船舶集团有限公司",
+      "nameEn": "China State Shipbuilding Corporation Limited (CSSC)",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2019,
+      "size": "巨头",
+      "classCode": "3011",
+      "business": "船舶与海洋工程装备设计建造",
+      "products": "集装箱船、油轮、LNG 运输船、军舰、海工平台",
+      "desc": "由中国船舶工业集团与船舶重工集团重组而成的造船央企，手持订单量位居全球前列。在高附加值船型（LNG 船、超大型集装箱船）上持续突破。",
+      "tags": [
+        "造船央企",
+        "LNG 船",
+        "手持订单"
+      ]
+    },
+    {
+      "id": "boeing",
+      "name": "波音公司",
+      "nameEn": "The Boeing Company",
+      "country": "美国",
+      "hq": "弗吉尼亚州 阿灵顿",
+      "founded": 1916,
+      "ticker": "BA.NYSE",
+      "size": "巨头",
+      "classCode": "3030",
+      "business": "民用飞机与防务航天产品制造",
+      "products": "737 / 787 系列客机、军用飞机、卫星、导弹系统",
+      "desc": "全球两大民用飞机制造商之一。民航业务与空客形成双寡头格局，防务与航天业务提供周期对冲。近年因质量与交付问题面临产能与信任重建压力。",
+      "tags": [
+        "民机双寡头",
+        "防务",
+        "供应链"
+      ],
+      "gleif": {
+        "lei": "RVHJWBXLJ1RFUBSY1F30",
+        "legalName": "THE BOEING COMPANY",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1934-07-19",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "The Boeing Company"
+      },
+      "sec": {
+        "cik": "0000012927",
+        "legalName": "BOEING CO",
+        "ticker": "BA",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000012927&type=10-K",
+        "sic": "3721",
+        "sicDescription": "Aircraft",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "airbus",
+      "name": "空中客车公司",
+      "nameEn": "Airbus SE",
+      "country": "欧盟（法国 / 德国 / 西班牙）",
+      "hq": "图卢兹",
+      "founded": 1970,
+      "ticker": "AIR.PA",
+      "size": "巨头",
+      "classCode": "3030",
+      "business": "民用飞机、直升机与防务航天制造",
+      "products": "A320 / A350 系列客机、直升机、军用运输机、卫星",
+      "desc": "全球民用飞机交付量最大的制造商，A320neo 系列是单通道市场的主力机型。同时在天津设有总装线，深度绑定中国航空市场。",
+      "tags": [
+        "民机交付第一",
+        "A320neo",
+        "天津总装"
+      ],
+      "gleif": {
+        "lei": "MINO79WLOO247M1IL051",
+        "legalName": "AIRBUS SE",
+        "country": "NL",
+        "city": "LEIDEN",
+        "region": "NL-ZH",
+        "legalForm": "BBEB",
+        "registrationDate": "1998-12-29",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Airbus SE"
+      }
+    },
+    {
+      "id": "oppein",
+      "name": "欧派家居集团股份有限公司",
+      "nameEn": "Oppein Home Group Inc.",
+      "country": "中国",
+      "hq": "广东 广州",
+      "founded": 1994,
+      "ticker": "603833.SH",
+      "size": "大型",
+      "classCode": "3101",
+      "business": "定制家居产品设计、制造与零售",
+      "products": "整体橱柜、衣柜、木门、卫浴、整装大家居",
+      "desc": "中国定制家居行业龙头。以大规模柔性化生产（C2M 反向定制）支撑个性化订单，通过经销商网络覆盖全国，近年向\"整装大家居\"模式延伸。",
+      "tags": [
+        "定制家居",
+        "柔性生产",
+        "整装"
+      ],
+      "gleif": {
+        "lei": "6556007044PK3S44WF71",
+        "legalName": "欧派家居集团股份有限公司",
+        "country": "CN",
+        "city": "广州市",
+        "region": "CN-GD",
+        "legalForm": "ECAK",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "欧派家居集团股份有限公司"
+      }
+    },
+    {
+      "id": "ikea",
+      "name": "宜家（英格卡集团）",
+      "nameEn": "IKEA (Ingka Group)",
+      "country": "瑞典",
+      "hq": "阿姆霍特 / 莱顿",
+      "founded": 1943,
+      "size": "巨头",
+      "classCode": "3101",
+      "business": "平板包装家具设计与全球零售",
+      "products": "板式家具、家居用品、收纳产品、餐饮",
+      "desc": "全球最大的家具零售商。以\"平板包装 + 自助组装 + 全球统一设计\"的商业模式压低成本，供应链高度全球化，是家具零售业的范式创造者。",
+      "tags": [
+        "平板包装",
+        "全球零售",
+        "民主设计"
+      ]
+    },
+    {
+      "id": "sgcc",
+      "name": "国家电网有限公司",
+      "nameEn": "State Grid Corporation of China",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2002,
+      "size": "巨头",
+      "classCode": "3513",
+      "business": "电网建设运营与电力输送分配",
+      "products": "输配电服务、电力交易、综合能源服务",
+      "desc": "全球最大的公用事业企业。运营覆盖中国 88% 国土面积的电网，在特高压输电技术上全球领先，并主导多项国际电工标准。",
+      "tags": [
+        "特高压",
+        "全球最大公用事业",
+        "央企"
+      ],
+      "gleif": {
+        "lei": "300300SRCLQKVTFFOM15",
+        "legalName": "国家电网有限公司",
+        "country": "CN",
+        "city": "西城区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "2003-05-12",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "国家电网有限公司"
+      }
+    },
+    {
+      "id": "edf",
+      "name": "法国电力集团",
+      "nameEn": "Électricité de France (EDF)",
+      "country": "法国",
+      "hq": "巴黎",
+      "founded": 1946,
+      "ticker": "EDF.PA",
+      "size": "巨头",
+      "classCode": "3511",
+      "business": "发电、输配电与能源服务",
+      "products": "核电、水电、可再生能源发电、配电服务",
+      "desc": "欧洲最大的电力公司之一，核电占比极高，运营法国 50 余座核反应堆。近年推进 EPR2 新建计划，是全球核电技术与运营的重要主体。",
+      "tags": [
+        "核电",
+        "EPR",
+        "欧洲电力"
+      ],
+      "gleif": {
+        "lei": "549300X3UK4GG3FNMO06",
+        "legalName": "ELECTRICITE DE FRANCE",
+        "country": "FR",
+        "city": "PARIS",
+        "region": "FR-75C",
+        "legalForm": "QVPB",
+        "registrationDate": "1955-06-17",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "ELECTRICITE DE FRANCE"
+      }
+    },
+    {
+      "id": "chinagas",
+      "name": "中国燃气控股有限公司",
+      "nameEn": "China Gas Holdings Limited",
+      "country": "中国",
+      "hq": "香港 / 深圳",
+      "founded": 2002,
+      "ticker": "0384.HK",
+      "size": "大型",
+      "classCode": "3520",
+      "business": "城市燃气分销与管道运营",
+      "products": "管道天然气、LPG、车用燃气、综合能源",
+      "desc": "中国主要的城市燃气运营商之一，通过收购与新建取得多个城市的燃气特许经营权，形成覆盖全国的城燃网络。",
+      "tags": [
+        "城燃特许经营",
+        "管道气",
+        "LPG"
+      ],
+      "gleif": {
+        "lei": "254900KTSZLZ21VV8T33",
+        "legalName": "China Gas Holdings Limited",
+        "country": "BM",
+        "city": "Hamilton",
+        "region": "",
+        "legalForm": "7AS7",
+        "registrationDate": "1995-08-22",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "China Gas Holdings Limited"
+      }
+    },
+    {
+      "id": "bewg",
+      "name": "北控水务集团有限公司",
+      "nameEn": "Beijing Enterprises Water Group Limited",
+      "country": "中国",
+      "hq": "北京 / 香港",
+      "founded": 1993,
+      "ticker": "0371.HK",
+      "size": "大型",
+      "classCode": "3600",
+      "business": "水务投资、污水处理与水环境治理",
+      "products": "自来水供应、污水处理、水环境综合治理、海水淡化",
+      "desc": "中国领先的水务综合服务商，以 BOT/TOT 模式运营大量污水处理厂，近年从重资产投资向\"轻资产运营 + 技术输出\"转型。",
+      "tags": [
+        "水务",
+        "污水处理",
+        "BOT"
+      ],
+      "gleif": {
+        "lei": "529900TWUN2ALJKWRR11",
+        "legalName": "Beijing Enterprises Water Group Limited",
+        "country": "BM",
+        "city": "Hamilton",
+        "region": "",
+        "legalForm": "8888",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "Beijing Enterprises Water Group Limited"
+      }
+    },
+    {
+      "id": "gem",
+      "name": "格林美股份有限公司",
+      "nameEn": "GEM Co., Ltd.",
+      "country": "中国",
+      "hq": "广东 深圳",
+      "founded": 2001,
+      "ticker": "002340.SZ",
+      "size": "大型",
+      "classCode": "3830",
+      "business": "废旧电池与电子废弃物回收及材料再造",
+      "products": "三元前驱体、硫酸镍钴、再生塑料、报废汽车拆解",
+      "desc": "中国动力电池回收与材料再造的代表企业。以\"城市矿山\"模式回收镍钴锂等稀缺金属，再制成电池前驱体返销电池厂，闭合新能源材料循环。",
+      "tags": [
+        "电池回收",
+        "城市矿山",
+        "前驱体"
+      ],
+      "gleif": {
+        "lei": "300300FYIZ7FGM2QRC06",
+        "legalName": "格林美股份有限公司",
+        "country": "CN",
+        "city": "深圳市",
+        "region": "CN-GD",
+        "legalForm": "ECAK",
+        "registrationDate": "2001-12-27",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "格林美股份有限公司"
+      }
+    },
+    {
+      "id": "cscec",
+      "name": "中国建筑集团有限公司",
+      "nameEn": "China State Construction Engineering Corporation (CSCEC)",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1982,
+      "ticker": "601668.SH",
+      "size": "巨头",
+      "classCode": "4100",
+      "business": "房屋建筑工程总承包与地产开发",
+      "products": "房建工程、基础设施、房地产开发、勘察设计",
+      "desc": "全球最大的建筑企业。业务覆盖房建、基建、地产与设计四大板块，海外工程遍及\"一带一路\"沿线，以超高层建筑与大型公建施工见长。",
+      "tags": [
+        "全球最大建筑商",
+        "房建",
+        "一带一路"
+      ],
+      "gleif": {
+        "lei": "300300JP34Z5BCS24009",
+        "legalName": "中国建筑集团有限公司",
+        "country": "CN",
+        "city": "海淀区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "1983-03-23",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "中国建筑集团有限公司"
+      }
+    },
+    {
+      "id": "crec",
+      "name": "中国中铁股份有限公司",
+      "nameEn": "China Railway Group Limited",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1950,
+      "ticker": "601390.SH / 0390.HK",
+      "size": "巨头",
+      "classCode": "4210",
+      "business": "铁路、公路与城市轨道工程施工",
+      "products": "铁路工程、公路工程、城市轨道、桥梁隧道、勘察设计",
+      "desc": "中国铁路建设的两大主力之一，参与了中国高铁网络绝大部分线路的建设，并在海外承接铁路与城市轨道 EPC 项目。",
+      "tags": [
+        "高铁建设",
+        "隧道桥梁",
+        "EPC"
+      ]
+    },
+    {
+      "id": "crcc",
+      "name": "中国铁建股份有限公司",
+      "nameEn": "China Railway Construction Corporation Limited (CRCC)",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1948,
+      "ticker": "601186.SH / 1186.HK",
+      "size": "巨头",
+      "classCode": "4210",
+      "business": "铁路、公路、市政工程施工",
+      "products": "铁路工程、公路、桥梁、隧道、盾构装备、房地产开发",
+      "desc": "与中国中铁并称铁路建设\"两铁\"。除工程施工外，其盾构机（铁建重工）业务在高技术装备领域具备全球竞争力。",
+      "tags": [
+        "两铁",
+        "盾构机",
+        "铁路工程"
+      ],
+      "gleif": {
+        "lei": "3003008XPPXMY0STYT17",
+        "legalName": "中国铁建股份有限公司",
+        "country": "CN",
+        "city": "海淀区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "2007-11-04",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "中国铁建股份有限公司"
+      }
+    },
+    {
+      "id": "jhnj",
+      "name": "江河创建集团股份有限公司",
+      "nameEn": "Jangho Group Co., Ltd.",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1999,
+      "ticker": "601886.SH",
+      "size": "大型",
+      "classCode": "4390",
+      "business": "幕墙系统与室内装饰工程专业承包",
+      "products": "建筑幕墙、门窗系统、室内装饰、眼科医疗",
+      "desc": "全球建筑幕墙行业的头部企业，承建了大量超高层建筑的幕墙工程，并跨界布局眼科医疗业务，形成\"建筑装饰 + 医疗健康\"双主业。",
+      "tags": [
+        "幕墙",
+        "超高层",
+        "双主业"
+      ],
+      "gleif": {
+        "lei": "300300I8B6L242A4UJ04",
+        "legalName": "江河创建集团股份有限公司",
+        "country": "CN",
+        "city": "顺义区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "1999-02-03",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "江河创建集团股份有限公司"
+      }
+    },
+    {
+      "id": "zhongsheng",
+      "name": "中升集团控股有限公司",
+      "nameEn": "Zhongsheng Group Holdings Limited",
+      "country": "中国",
+      "hq": "辽宁 大连 / 香港",
+      "founded": 1998,
+      "ticker": "0881.HK",
+      "size": "大型",
+      "classCode": "4781",
+      "business": "豪华及中高端品牌汽车经销",
+      "products": "奔驰、雷克萨斯、丰田等品牌整车销售、售后维修、金融保险",
+      "desc": "中国领先的汽车经销商集团，以豪华品牌门店网络为核心资产。售后与金融衍生业务贡献了大部分毛利，抗周期能力强于纯新车销售。",
+      "tags": [
+        "汽车经销",
+        "豪华品牌",
+        "售后毛利"
+      ],
+      "gleif": {
+        "lei": "3003005VYMEBAJNJ2Y26",
+        "legalName": "Zhongsheng Group Holdings Limited",
+        "country": "KY",
+        "city": "Cricket Square",
+        "region": "",
+        "legalForm": "4XP8",
+        "registrationDate": "2008-06-22",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Zhongsheng Group Holdings Limited"
+      }
+    },
+    {
+      "id": "cofco",
+      "name": "中粮集团有限公司",
+      "nameEn": "COFCO Corporation",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1949,
+      "size": "巨头",
+      "classCode": "4620",
+      "business": "粮油食品贸易、加工与供应链",
+      "products": "粮食贸易、食用油、大米、面粉、食糖、饲料",
+      "desc": "中国最大的粮油食品企业，承担国家粮食安全与储备的重要职能。业务贯通\"田间到餐桌\"全链条，并控股蒙牛、中粮包装等企业。",
+      "tags": [
+        "粮油贸易",
+        "粮食安全",
+        "央企"
+      ],
+      "gleif": {
+        "lei": "3003009WN9MWDJEO6O86",
+        "legalName": "中粮集团有限公司",
+        "country": "CN",
+        "city": "朝阳区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "1983-07-05",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "中粮集团有限公司"
+      }
+    },
+    {
+      "id": "jd",
+      "name": "京东集团",
+      "nameEn": "JD.com, Inc.",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1998,
+      "ticker": "9618.HK / JD.NASDAQ",
+      "size": "巨头",
+      "classCode": "4790",
+      "business": "自营为主的自营式电商平台",
+      "products": "自营电商零售、POP 平台、物流服务、健康、云计算",
+      "desc": "中国最大的自营式电商企业。以自建仓储物流体系为核心壁垒，实现\"211 限时达\"式的履约能力，近年向即时零售与外卖业务延伸。",
+      "tags": [
+        "自营电商",
+        "自建物流",
+        "履约能力"
+      ],
+      "gleif": {
+        "lei": "549300HVTWB0GJZ16V92",
+        "legalName": "JD.com, Inc.",
+        "country": "KY",
+        "city": "George Town, Grand Cayman",
+        "region": "",
+        "legalForm": "OSBR",
+        "registrationDate": "2014-01-15",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "JD.COM, INC."
+      },
+      "sec": {
+        "cik": "0001549802",
+        "legalName": "JD.com, Inc.",
+        "ticker": "JD",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001549802&type=10-K",
+        "sic": "5990",
+        "sicDescription": "Retail-Retail Stores, NEC",
+        "stateOfIncorporation": "E9"
+      }
+    },
+    {
+      "id": "walmart",
+      "name": "沃尔玛公司",
+      "nameEn": "Walmart Inc.",
+      "country": "美国",
+      "hq": "阿肯色州 本顿维尔",
+      "founded": 1962,
+      "ticker": "WMT.NYSE",
+      "size": "巨头",
+      "classCode": "4711",
+      "business": "大型超市与会员制仓储零售",
+      "products": "食品杂货、日用品、服装、药品、山姆会员店",
+      "desc": "全球营收最大的零售企业。以\"天天平价\"定位与极致的供应链管理（含自有物流车队）著称，近年电商与会员店业务成为增长引擎。",
+      "tags": [
+        "全球营收第一",
+        "天天平价",
+        "山姆会员店"
+      ],
+      "gleif": {
+        "lei": "Y87794H0US1R65VBXU25",
+        "legalName": "WALMART INC.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1969-10-31",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Walmart Inc."
+      },
+      "sec": {
+        "cik": "0000104169",
+        "legalName": "Walmart Inc.",
+        "ticker": "WMT",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000104169&type=10-K",
+        "sic": "5331",
+        "sicDescription": "Retail-Variety Stores",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "suning",
+      "name": "苏宁易购集团股份有限公司",
+      "nameEn": "Suning.com Co., Ltd.",
+      "country": "中国",
+      "hq": "江苏 南京",
+      "founded": 1990,
+      "ticker": "002024.SZ",
+      "size": "大型",
+      "classCode": "4740",
+      "business": "家电 3C 零售与线上线下一体化运营",
+      "products": "家电、消费电子、家居、日用百货、零售云",
+      "desc": "中国传统家电连锁零售龙头转型线上的代表性企业，以\"门店 + 电商 + 零售云\"覆盖城乡市场，近年经历债务重整与业务收缩。",
+      "tags": [
+        "家电零售",
+        "O2O",
+        "零售云"
+      ],
+      "gleif": {
+        "lei": "300300H2PHP62ZGZDD66",
+        "legalName": "苏宁易购集团股份有限公司",
+        "country": "CN",
+        "city": "南京市",
+        "region": "CN-JS",
+        "legalForm": "ECAK",
+        "registrationDate": "1996-05-14",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "苏宁易购集团股份有限公司"
+      }
+    },
+    {
+      "id": "manbang",
+      "name": "满帮集团",
+      "nameEn": "Full Truck Alliance Co., Ltd.",
+      "country": "中国",
+      "hq": "江苏 南京",
+      "founded": 2017,
+      "ticker": "YMM.NYSE",
+      "size": "大型",
+      "classCode": "4923",
+      "business": "数字货运平台（车货匹配）",
+      "products": "干线整车运输撮合、货运经纪、ETC 与金融增值服务",
+      "desc": "中国最大的公路货运数字平台，由运满满与货车帮合并而成。以平台化方式解决干线运输中的信息不对称问题，是国内物流数字化的标志性企业。",
+      "tags": [
+        "数字货运",
+        "车货匹配",
+        "平台经济"
+      ],
+      "gleif": {
+        "lei": "984500884LB1DP8DAC57",
+        "legalName": "Full Truck Alliance Co. Ltd.",
+        "country": "KY",
+        "city": "GEORGE TOWN",
+        "region": "",
+        "legalForm": "UE3G",
+        "registrationDate": "2017-12-27",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Full Truck Alliance Co., Ltd."
+      },
+      "sec": {
+        "cik": "0001838413",
+        "legalName": "Full Truck Alliance Co. Ltd.",
+        "ticker": "YMM",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001838413&type=10-K",
+        "sic": "7372",
+        "sicDescription": "Services-Prepackaged Software",
+        "stateOfIncorporation": "E9"
+      }
+    },
+    {
+      "id": "didi",
+      "name": "滴滴出行",
+      "nameEn": "DiDi Global Inc.",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2012,
+      "ticker": "92Sy.OTC",
+      "size": "巨头",
+      "classCode": "4921",
+      "business": "网约车与出行平台运营",
+      "products": "快车、专车、出租车、顺风车、共享单车、代驾",
+      "desc": "中国最大的移动出行平台。通过聚合司机与乘客实现实时匹配，并基于出行数据延伸至自动驾驶、金融与车服业务。",
+      "tags": [
+        "网约车",
+        "平台经济",
+        "自动驾驶"
+      ],
+      "gleif": {
+        "lei": "8368006Y2DHY77ADSY31",
+        "legalName": "DiDi Global Inc.",
+        "country": "KY",
+        "city": "Ugland House",
+        "region": "",
+        "legalForm": "OSBR",
+        "registrationDate": "2013-01-10",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "DiDi Global Inc."
+      }
+    },
+    {
+      "id": "cosco",
+      "name": "中远海运控股股份有限公司",
+      "nameEn": "COSCO SHIPPING Holdings Co., Ltd.",
+      "country": "中国",
+      "hq": "上海",
+      "founded": 2005,
+      "ticker": "601919.SH / 1919.HK",
+      "size": "巨头",
+      "classCode": "5012",
+      "business": "集装箱班轮运输与码头运营",
+      "products": "集装箱海运、码头装卸、端到端物流",
+      "desc": "全球最大的集装箱航运企业之一，旗下中远海运集运与东方海外组成双品牌运营，同时控股大量枢纽港码头资产，形成\"航运 + 港口\"协同。",
+      "tags": [
+        "集装箱航运",
+        "码头资产",
+        "双品牌"
+      ],
+      "gleif": {
+        "lei": "529900Y39B9BA9NHFF69",
+        "legalName": "COSCO SHIPPING Holdings Co., Ltd.",
+        "country": "CN",
+        "city": "Tianjin",
+        "region": "CN-TJ",
+        "legalForm": "8888",
+        "registrationDate": "",
+        "registrationStatus": "DUPLICATE",
+        "score": 1,
+        "queriedAs": "COSCO SHIPPING HOLDINGS CO., LTD."
+      }
+    },
+    {
+      "id": "maersk",
+      "name": "A.P. 穆勒-马士基集团",
+      "nameEn": "A.P. Moller - Maersk A/S",
+      "country": "丹麦",
+      "hq": "哥本哈根",
+      "founded": 1904,
+      "ticker": "MAERSK-B.CO",
+      "size": "巨头",
+      "classCode": "5012",
+      "business": "集装箱班轮运输与综合物流",
+      "products": "集装箱海运、码头、货代、报关、供应链管理",
+      "desc": "全球集装箱航运的标杆企业，也是全球运价的风向标。近年从纯航运向\"端到端综合物流服务商\"转型，通过收购整合仓储与货代能力。",
+      "tags": [
+        "集装箱航运",
+        "运价风向标",
+        "综合物流"
+      ]
+    },
+    {
+      "id": "airchina",
+      "name": "中国国际航空股份有限公司",
+      "nameEn": "Air China Limited",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1988,
+      "ticker": "601111.SH / 0753.HK",
+      "size": "巨头",
+      "classCode": "5110",
+      "business": "国际与国内航空旅客运输",
+      "products": "客运航线、公务机、航空货运、机务维修",
+      "desc": "中国唯一载旗航空公司，以北京首都机场为主基地，国际航线网络最广。作为星空联盟成员，与全球主要航司建立联运合作。",
+      "tags": [
+        "载旗航空",
+        "星空联盟",
+        "国际航线"
+      ],
+      "gleif": {
+        "lei": "213800I9TWC9K22N4502",
+        "legalName": "中国国际航空股份有限公司",
+        "country": "CN",
+        "city": "BEIJING",
+        "region": "CN-BJ",
+        "legalForm": "8888",
+        "registrationDate": "2006-03-27",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "中国国际航空股份有限公司"
+      }
+    },
+    {
+      "id": "fedex",
+      "name": "联邦快递集团",
+      "nameEn": "FedEx Corporation",
+      "country": "美国",
+      "hq": "田纳西州 孟菲斯",
+      "founded": 1971,
+      "ticker": "FDX.NYSE",
+      "size": "巨头",
+      "classCode": "5120",
+      "business": "航空快递与供应链服务",
+      "products": "隔夜快递、国际货运、地面配送、供应链解决方案",
+      "desc": "全球最大的航空快递企业之一。以孟菲斯超级转运中心为枢纽建立\"轮辐式\"航空网络，实现隔夜送达，是航空货运网络设计的经典案例。",
+      "tags": [
+        "航空快递",
+        "轮辐式枢纽",
+        "孟菲斯"
+      ],
+      "gleif": {
+        "lei": "549300E707U7WNPZN687",
+        "legalName": "FEDEX CORPORATION",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1997-10-01",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "FedEx Corporation"
+      },
+      "sec": {
+        "cik": "0001048911",
+        "legalName": "FEDEX CORP",
+        "ticker": "FDX",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001048911&type=10-K",
+        "sic": "4513",
+        "sicDescription": "Air Courier Services",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "glp",
+      "name": "普洛斯集团",
+      "nameEn": "GLP Pte. Ltd.",
+      "country": "新加坡",
+      "hq": "新加坡",
+      "founded": 2009,
+      "size": "巨头",
+      "classCode": "5210",
+      "business": "现代物流仓储设施投资与运营",
+      "products": "高标准物流园、冷链仓储、数据中心、物流基金",
+      "desc": "全球领先的现代物流基础设施投资运营商。在中国、日本、美国等地持有大量高标准物流园，是电商与快运企业履约网络的空间载体。",
+      "tags": [
+        "物流地产",
+        "高标准仓",
+        "REITs"
+      ],
+      "gleif": {
+        "lei": "254900PC2NNG9BLIJO15",
+        "legalName": "GLP PTE. LTD.",
+        "country": "SG",
+        "city": "Singapore",
+        "region": "",
+        "legalForm": "IWZF",
+        "registrationDate": "2007-08-28",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "GLP Pte. Ltd."
+      }
+    },
+    {
+      "id": "sfexpress",
+      "name": "顺丰控股股份有限公司",
+      "nameEn": "SF Holding Co., Ltd.",
+      "country": "中国",
+      "hq": "广东 深圳",
+      "founded": 1993,
+      "ticker": "002352.SZ",
+      "size": "巨头",
+      "classCode": "5320",
+      "business": "时效快递与综合物流服务",
+      "products": "时效件、经济件、冷运、国际快递、供应链、货运航空",
+      "desc": "中国快递行业的高端标杆。以直营模式保障时效与服务质量，自建货运航空机队（顺丰航空）与枢纽机场（鄂州花湖），是少数掌握全链条的快递企业。",
+      "tags": [
+        "直营快递",
+        "顺丰航空",
+        "鄂州枢纽"
+      ]
+    },
+    {
+      "id": "marriott",
+      "name": "万豪国际集团",
+      "nameEn": "Marriott International, Inc.",
+      "country": "美国",
+      "hq": "马里兰州 贝塞斯达",
+      "founded": 1927,
+      "ticker": "MAR.NASDAQ",
+      "size": "巨头",
+      "classCode": "5510",
+      "business": "酒店品牌管理与特许经营",
+      "products": "豪华与中高端酒店品牌、会员忠诚计划、酒店管理服务",
+      "desc": "全球客房数最多的酒店集团之一，运营 30 余个品牌。采用\"轻资产\"模式：主要靠品牌授权与管理费用盈利，物业资产多由业主方持有。",
+      "tags": [
+        "酒店集团",
+        "轻资产",
+        "品牌矩阵"
+      ],
+      "gleif": {
+        "lei": "225YDZ14ZO8E1TXUSU86",
+        "legalName": "MARRIOTT INTERNATIONAL, INC.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1997-09-19",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Marriott International, Inc."
+      },
+      "sec": {
+        "cik": "0001048286",
+        "legalName": "MARRIOTT INTERNATIONAL INC /MD/",
+        "ticker": "MAR",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001048286&type=10-K",
+        "sic": "7011",
+        "sicDescription": "Hotels & Motels",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "huazhu",
+      "name": "华住集团有限公司",
+      "nameEn": "H World Group Limited",
+      "country": "中国",
+      "hq": "上海",
+      "founded": 2005,
+      "ticker": "1179.HK / HTHT.NASDAQ",
+      "size": "大型",
+      "classCode": "5510",
+      "business": "连锁酒店运营与品牌管理",
+      "products": "汉庭、全季、桔子、花间堂、施柏阁",
+      "desc": "中国领先的连锁酒店集团，以汉庭、全季等品牌覆盖经济型与中端市场。依托自主研发的酒店管理系统与会员直销渠道，实现高效扩张。",
+      "tags": [
+        "连锁酒店",
+        "中端升级",
+        "直销会员"
+      ],
+      "gleif": {
+        "lei": "549300Y5ML31FVN83730",
+        "legalName": "H WORLD GROUP LIMITED",
+        "country": "KY",
+        "city": "George Town",
+        "region": "",
+        "legalForm": "OSBR",
+        "registrationDate": "2007-01-03",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "H World Group Limited"
+      },
+      "sec": {
+        "cik": "0001483994",
+        "legalName": "H World Group Ltd",
+        "ticker": "HTHT",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001483994&type=10-K",
+        "sic": "7011",
+        "sicDescription": "Hotels & Motels",
+        "stateOfIncorporation": "E9"
+      }
+    },
+    {
+      "id": "mcdonalds",
+      "name": "麦当劳公司",
+      "nameEn": "McDonald's Corporation",
+      "country": "美国",
+      "hq": "伊利诺伊州 芝加哥",
+      "founded": 1955,
+      "ticker": "MCD.NYSE",
+      "size": "巨头",
+      "classCode": "5610",
+      "business": "快餐连锁经营与特许授权",
+      "products": "汉堡、薯条、咖啡、甜品、McCafé",
+      "desc": "全球最大的快餐连锁企业。核心资产是地产——通过持有门店物业并收取租金与特许费获利，是\"房地产 + 品牌\"复合模式的经典样本。",
+      "tags": [
+        "快餐连锁",
+        "特许经营",
+        "地产模式"
+      ],
+      "gleif": {
+        "lei": "UE2136O97NLB5BYP9H04",
+        "legalName": "MCDONALD'S CORPORATION",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1964-12-21",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "McDonald's Corporation"
+      },
+      "sec": {
+        "cik": "0000063908",
+        "legalName": "MCDONALDS CORP",
+        "ticker": "MCD",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000063908&type=10-K",
+        "sic": "5812",
+        "sicDescription": "Retail-Eating  Places",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "haidilao",
+      "name": "海底捞国际控股有限公司",
+      "nameEn": "Haidilao International Holding Ltd.",
+      "country": "中国",
+      "hq": "四川 成都",
+      "founded": 1994,
+      "ticker": "6862.HK",
+      "size": "大型",
+      "classCode": "5610",
+      "business": "中式火锅连锁餐饮经营",
+      "products": "火锅堂食、外卖、调味品、预制菜、供应链服务",
+      "desc": "中国最具代表性的火锅连锁品牌，以极致服务与员工激励制度闻名。其分拆的颐海国际负责底料与供应链，形成餐饮 + 食品的双轮结构。",
+      "tags": [
+        "火锅连锁",
+        "极致服务",
+        "供应链分拆"
+      ],
+      "gleif": {
+        "lei": "3003009Q8GV4VNKZWI24",
+        "legalName": "HAIDILAO INTERNATIONAL HOLDING LTD.",
+        "country": "KY",
+        "city": "GEORGE TOWN",
+        "region": "",
+        "legalForm": "UE3G",
+        "registrationDate": "2015-07-14",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Haidilao International Holding Ltd."
+      }
+    },
+    {
+      "id": "starbucks",
+      "name": "星巴克公司",
+      "nameEn": "Starbucks Corporation",
+      "country": "美国",
+      "hq": "华盛顿州 西雅图",
+      "founded": 1971,
+      "ticker": "SBUX.NASDAQ",
+      "size": "巨头",
+      "classCode": "5630",
+      "business": "连锁咖啡门店运营与品牌零售",
+      "products": "现制咖啡与茶饮、烘焙食品、咖啡豆、即饮产品",
+      "desc": "全球最大的连锁咖啡企业，把\"第三空间\"概念做成商业模式。中国是其最大的海外市场之一，曾以合资方式运营后转为全资并引入本土战略投资。",
+      "tags": [
+        "连锁咖啡",
+        "第三空间",
+        "第三波咖啡"
+      ],
+      "gleif": {
+        "lei": "OQSJ1DU9TAOC51A47K68",
+        "legalName": "STARBUCKS CORPORATION",
+        "country": "US",
+        "city": "TUMWATER",
+        "region": "US-WA",
+        "legalForm": "NHYA",
+        "registrationDate": "1985-11-04",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Starbucks Corporation"
+      },
+      "sec": {
+        "cik": "0000829224",
+        "legalName": "STARBUCKS CORP",
+        "ticker": "SBUX",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000829224&type=10-K",
+        "sic": "5810",
+        "sicDescription": "Retail-Eating & Drinking Places",
+        "stateOfIncorporation": "WA"
+      }
+    },
+    {
+      "id": "pearson",
+      "name": "培生集团",
+      "nameEn": "Pearson plc",
+      "country": "英国",
+      "hq": "伦敦",
+      "founded": 1844,
+      "ticker": "PSON.LSE",
+      "size": "大型",
+      "classCode": "5813",
+      "business": "教育内容出版与数字化学习服务",
+      "products": "教材与教辅、考试测评、在线学习平台、职业认证",
+      "desc": "全球最大的教育出版集团，拥有《金融时报》（已出售）与企鹅出版社（已合并）的历史。现聚焦数字化学习与测评业务，转型为教育服务提供商。",
+      "tags": [
+        "教育出版",
+        "数字化学习",
+        "测评"
+      ],
+      "gleif": {
+        "lei": "2138004JBXWWJKIURC57",
+        "legalName": "PEARSON PLC",
+        "country": "GB",
+        "city": "LONDON",
+        "region": "GB-LND",
+        "legalForm": "B6ES",
+        "registrationDate": "1897-08-12",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Pearson plc"
+      }
+    },
+    {
+      "id": "microsoft",
+      "name": "微软公司",
+      "nameEn": "Microsoft Corporation",
+      "country": "美国",
+      "hq": "华盛顿州 雷德蒙德",
+      "founded": 1975,
+      "ticker": "MSFT.NASDAQ",
+      "size": "巨头",
+      "classCode": "5829",
+      "business": "操作系统、生产力软件与云计算服务",
+      "products": "Windows、Office / Microsoft 365、Azure、Dynamics、GitHub",
+      "desc": "全球最大的软件公司之一。通过\"软件授权 → 订阅制 SaaS → 云基础设施\"的连续转型维持增长，Azure 云与 AI 服务是当前主要增长引擎。",
+      "tags": [
+        "操作系统",
+        "Azure 云",
+        "订阅制"
+      ],
+      "gleif": {
+        "lei": "INR2EJN1ERAN0W5ZP974",
+        "legalName": "MICROSOFT CORPORATION",
+        "country": "US",
+        "city": "TUMWATER",
+        "region": "US-WA",
+        "legalForm": "NHYA",
+        "registrationDate": "1993-09-22",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "MICROSOFT CORPORATION"
+      },
+      "sec": {
+        "cik": "0000789019",
+        "legalName": "MICROSOFT CORP",
+        "ticker": "MSFT",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789019&type=10-K",
+        "sic": "7372",
+        "sicDescription": "Services-Prepackaged Software",
+        "stateOfIncorporation": "WA"
+      }
+    },
+    {
+      "id": "yonyou",
+      "name": "用友网络科技股份有限公司",
+      "nameEn": "Yonyou Network Technology Co., Ltd.",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1988,
+      "ticker": "600588.SH",
+      "size": "大型",
+      "classCode": "5829",
+      "business": "企业管理软件与云服务",
+      "products": "ERP、财务软件、人力与供应链云、YonBIP 平台",
+      "desc": "中国最大的企业管理软件供应商之一，从财务软件起家，扩展至 ERP 与云原生企业服务平台，服务大量大型国企与制造业客户。",
+      "tags": [
+        "ERP",
+        "企业管理软件",
+        "云转型"
+      ],
+      "gleif": {
+        "lei": "30030017NBX3U80ANB35",
+        "legalName": "用友网络科技股份有限公司",
+        "country": "CN",
+        "city": "海淀区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "1995-01-17",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "用友网络科技股份有限公司"
+      }
+    },
+    {
+      "id": "wbd",
+      "name": "华纳兄弟探索公司",
+      "nameEn": "Warner Bros. Discovery, Inc.",
+      "country": "美国",
+      "hq": "纽约",
+      "founded": 2022,
+      "ticker": "WBD.NASDAQ",
+      "size": "巨头",
+      "classCode": "5911",
+      "business": "影视内容制作、发行与流媒体运营",
+      "products": "电影制作、HBO 剧集、流媒体平台 Max、电视频道",
+      "desc": "由华纳媒体与探索公司合并成立，拥有 HBO、华纳兄弟影业、DC 等影视资产，是\"内容库 + 流媒体\"模式的重要参与者。",
+      "tags": [
+        "好莱坞",
+        "HBO",
+        "流媒体"
+      ],
+      "gleif": {
+        "lei": "5493006ZCRFWKF6B1K26",
+        "legalName": "WARNER BROS. DISCOVERY, INC.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "2008-04-28",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Warner Bros. Discovery, Inc."
+      },
+      "sec": {
+        "cik": "0001437107",
+        "legalName": "Warner Bros. Discovery, Inc.",
+        "ticker": "WBD",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001437107&type=10-K",
+        "sic": "4841",
+        "sicDescription": "Cable & Other Pay Television Services",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "chinamobile",
+      "name": "中国移动通信集团有限公司",
+      "nameEn": "China Mobile Communications Group Co., Ltd.",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2000,
+      "ticker": "600941.SH / 0941.HK",
+      "size": "巨头",
+      "classCode": "6120",
+      "business": "移动通信网络运营与信息服务",
+      "products": "移动语音与流量、宽带、专线、云计算、物联网",
+      "desc": "全球用户规模最大的电信运营商。拥有覆盖最广的 4G/5G 网络，现以\"CHBN\"（个人、家庭、政企、新业务）四大市场推进转型，政企云业务增长显著。",
+      "tags": [
+        "电信运营商",
+        "5G 覆盖",
+        "政企云"
+      ],
+      "gleif": {
+        "lei": "3003001RSOXW6MZ1TM69",
+        "legalName": "中国移动通信集团有限公司",
+        "country": "CN",
+        "city": "西城区",
+        "region": "CN-BJ",
+        "legalForm": "ECAK",
+        "registrationDate": "1999-07-21",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "中国移动通信集团有限公司"
+      }
+    },
+    {
+      "id": "att",
+      "name": "美国电话电报公司",
+      "nameEn": "AT&T Inc.",
+      "country": "美国",
+      "hq": "德克萨斯州 达拉斯",
+      "founded": 1885,
+      "ticker": "T.NYSE",
+      "size": "巨头",
+      "classCode": "6110",
+      "business": "固定与移动通信网络运营",
+      "products": "光纤宽带、移动通信、企业专线、媒体内容（已剥离）",
+      "desc": "美国历史最悠久的电信运营商，前身可追溯至贝尔电话公司。经历媒体资产并购与剥离的反复后，重新聚焦通信主业与光纤网络建设。",
+      "tags": [
+        "贝尔系",
+        "光纤网络",
+        "主业回归"
+      ],
+      "gleif": {
+        "lei": "549300Z40J86GGSTL398",
+        "legalName": "AT&T INC.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1983-10-05",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "AT&T Inc."
+      },
+      "sec": {
+        "cik": "0000732717",
+        "legalName": "AT&T INC.",
+        "ticker": "T",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000732717&type=10-K",
+        "sic": "4813",
+        "sicDescription": "Telephone Communications (No Radiotelephone)",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "infosys",
+      "name": "印孚瑟斯技术有限公司",
+      "nameEn": "Infosys Limited",
+      "country": "印度",
+      "hq": "班加罗尔",
+      "founded": 1981,
+      "ticker": "INFY.NYSE",
+      "size": "巨头",
+      "classCode": "6219",
+      "business": "软件外包与 IT 服务交付",
+      "products": "应用开发与维护、测试服务、数字化转型咨询、AI 平台",
+      "desc": "印度 IT 服务业的开创者之一，是\"全球交付模式\"（GDM）的缔造者——在印度低成本交付中心为欧美客户远程开发软件，奠定了印度软件外包产业的基础。",
+      "tags": [
+        "IT 外包",
+        "全球交付",
+        "班加罗尔"
+      ],
+      "gleif": {
+        "lei": "335800TYLGG93MM7PR89",
+        "legalName": "INFOSYS LIMITED",
+        "country": "IN",
+        "city": "BANGALORE",
+        "region": "IN-KA",
+        "legalForm": "DDKQ",
+        "registrationDate": "1981-07-01",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Infosys Limited"
+      },
+      "sec": {
+        "cik": "0001067491",
+        "legalName": "Infosys Ltd",
+        "ticker": "INFY",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067491&type=10-K",
+        "sic": "7371",
+        "sicDescription": "Services-Computer Programming Services",
+        "stateOfIncorporation": ""
+      }
+    },
+    {
+      "id": "accenture",
+      "name": "埃森哲公司",
+      "nameEn": "Accenture plc",
+      "country": "爱尔兰",
+      "hq": "都柏林",
+      "founded": 1989,
+      "ticker": "ACN.NYSE",
+      "size": "巨头",
+      "classCode": "6220",
+      "business": "管理咨询、技术咨询与外包服务",
+      "products": "战略咨询、系统集成、数字化转型、运营外包、云服务",
+      "desc": "全球最大的咨询与技术服务公司。由安达信咨询部门独立而来，以\"咨询 + 实施 + 运营\"的一体化交付能力见长，客户覆盖绝大多数财富 500 强企业。",
+      "tags": [
+        "咨询+实施",
+        "数字化转型",
+        "全球最大"
+      ],
+      "gleif": {
+        "lei": "549300JY6CF6DO4YFQ03",
+        "legalName": "ACCENTURE PLC",
+        "country": "GI",
+        "city": "GIBRALTAR",
+        "region": "",
+        "legalForm": "UUYB",
+        "registrationDate": "2001-03-21",
+        "registrationStatus": "RETIRED",
+        "score": 1,
+        "queriedAs": "Accenture plc"
+      },
+      "sec": {
+        "cik": "0001467373",
+        "legalName": "Accenture plc",
+        "ticker": "ACN",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001467373&type=10-K",
+        "sic": "7389",
+        "sicDescription": "Services-Business Services, NEC",
+        "stateOfIncorporation": "L2"
+      }
+    },
+    {
+      "id": "alicloud",
+      "name": "阿里云（阿里巴巴集团）",
+      "nameEn": "Alibaba Cloud Intelligence Group",
+      "country": "中国",
+      "hq": "浙江 杭州",
+      "founded": 2009,
+      "size": "巨头",
+      "classCode": "6310",
+      "business": "公共云计算与数据处理服务",
+      "products": "弹性计算、云数据库、大数据平台、通义大模型、CDN",
+      "desc": "中国最大的公共云服务商，也是亚太地区份额领先的云厂商。以自研飞天操作系统与倚天芯片支撑规模化算力输出，并向大模型服务延伸。",
+      "tags": [
+        "公共云",
+        "飞天系统",
+        "大模型"
+      ]
+    },
+    {
+      "id": "equinix",
+      "name": "Equinix 公司",
+      "nameEn": "Equinix, Inc.",
+      "country": "美国",
+      "hq": "加利福尼亚州 雷德伍德城",
+      "founded": 1998,
+      "ticker": "EQIX.NASDAQ",
+      "size": "巨头",
+      "classCode": "6310",
+      "business": "数据中心托管与互联服务",
+      "products": "机柜托管、网络互联（Equinix Fabric）、云接入",
+      "desc": "全球最大的数据中心与互联服务提供商，以\"网络中立互联枢纽\"为定位——让不同运营商与云厂商在同一数据中心内互联，是全球互联网流量的关键交换节点。",
+      "tags": [
+        "数据中心",
+        "互联枢纽",
+        "REITs"
+      ],
+      "sec": {
+        "cik": "0001101239",
+        "legalName": "EQUINIX INC",
+        "ticker": "EQIX",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001101239&type=10-K",
+        "sic": "6798",
+        "sicDescription": "Real Estate Investment Trusts",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "icbc",
+      "name": "中国工商银行股份有限公司",
+      "nameEn": "Industrial and Commercial Bank of China Limited (ICBC)",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1984,
+      "ticker": "601398.SH / 1398.HK",
+      "size": "巨头",
+      "classCode": "6419",
+      "business": "商业银行存贷汇与综合金融服务",
+      "products": "公司金融、个人金融、资金业务、资产管理、金融科技",
+      "desc": "按总资产计全球最大的商业银行，拥有中国最广泛的网点网络。以对公业务与大型基建信贷为传统优势，近年推进\"智慧银行\"数字化改造。",
+      "tags": [
+        "全球最大银行",
+        "网点网络",
+        "对公业务"
+      ],
+      "gleif": {
+        "lei": "2549005QXSCD8MSHQU78",
+        "legalName": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA LIMITED",
+        "country": "AU",
+        "city": "Sydney",
+        "region": "",
+        "legalForm": "ECAK",
+        "registrationDate": "1999-03-25",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA LIMITED"
+      }
+    },
+    {
+      "id": "jpmorgan",
+      "name": "摩根大通集团",
+      "nameEn": "JPMorgan Chase & Co.",
+      "country": "美国",
+      "hq": "纽约",
+      "founded": 1799,
+      "ticker": "JPM.NYSE",
+      "size": "巨头",
+      "classCode": "6419",
+      "business": "全能型银行：零售、投行、资管与交易",
+      "products": "存贷款、投资银行、金融市场交易、资产管理、信用卡",
+      "desc": "美国最大的银行，也是全球系统重要性银行之一。区别于纯零售银行，其投行与交易业务（Markets）贡献了显著利润，形成对零售周期的对冲。",
+      "tags": [
+        "全能银行",
+        "投行",
+        "系统重要性"
+      ],
+      "gleif": {
+        "lei": "8I5DZWZKVSZI1NUHU748",
+        "legalName": "JPMORGAN CHASE & CO.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1968-10-28",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "JPMorgan Chase & Co."
+      },
+      "sec": {
+        "cik": "0000019617",
+        "legalName": "JPMORGAN CHASE & CO",
+        "ticker": "JPM",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000019617&type=10-K",
+        "sic": "6021",
+        "sicDescription": "National Commercial Banks",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "berkshire",
+      "name": "伯克希尔·哈撒韦公司",
+      "nameEn": "Berkshire Hathaway Inc.",
+      "country": "美国",
+      "hq": "内布拉斯加州 奥马哈",
+      "founded": 1839,
+      "ticker": "BRK.A.NYSE",
+      "size": "巨头",
+      "classCode": "6421",
+      "business": "多元化控股与股权投资",
+      "products": "保险（GEICO）、铁路（BNSF）、能源、制造业、股票投资组合",
+      "desc": "沃伦·巴菲特执掌的多元化控股集团。以保险浮存金作为低成本资金来源，长期持有优质企业股权与二级市场标的，是\"控股公司\"模式的标杆。",
+      "tags": [
+        "巴菲特",
+        "保险浮存金",
+        "控股集团"
+      ],
+      "gleif": {
+        "lei": "5493000C01ZX7D35SD85",
+        "legalName": "BERKSHIRE HATHAWAY INC.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "1998-06-16",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Berkshire Hathaway Inc."
+      }
+    },
+    {
+      "id": "pingan",
+      "name": "中国平安保险（集团）股份有限公司",
+      "nameEn": "Ping An Insurance (Group) Company of China, Ltd.",
+      "country": "中国",
+      "hq": "广东 深圳",
+      "founded": 1988,
+      "ticker": "601318.SH / 2318.HK",
+      "size": "巨头",
+      "classCode": "6511",
+      "business": "综合金融：保险、银行、资管与科技",
+      "products": "人寿保险、财产保险、银行、信托、证券、健康医疗",
+      "desc": "中国最大的综合金融集团之一，以保险为核心，横向拓展银行、资管与科技业务。其\"金融 + 科技 + 医疗健康\"生态战略是行业转型的观察样本。",
+      "tags": [
+        "综合金融",
+        "保险科技",
+        "生态战略"
+      ],
+      "gleif": {
+        "lei": "529900M9MC28JLN35U89",
+        "legalName": "中国平安保险（集团）股份有限公司",
+        "country": "CN",
+        "city": "Shenzhen",
+        "region": "CN-GD",
+        "legalForm": "ECAK",
+        "registrationDate": "1988-03-20",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "中国平安保险（集团）股份有限公司"
+      }
+    },
+    {
+      "id": "allianz",
+      "name": "安联保险集团",
+      "nameEn": "Allianz SE",
+      "country": "德国",
+      "hq": "慕尼黑",
+      "founded": 1890,
+      "ticker": "ALV.DE",
+      "size": "巨头",
+      "classCode": "6512",
+      "business": "财产险、责任险与资产管理",
+      "products": "车险、企业财产险、责任险、健康险、资产管理",
+      "desc": "欧洲最大的保险集团，以财产险与责任险为核心，同时通过太平洋投资管理公司（PIMCO）等平台经营全球资产管理业务。",
+      "tags": [
+        "欧洲最大保险",
+        "财产险",
+        "PIMCO"
+      ],
+      "gleif": {
+        "lei": "529900K9B0N5BT694847",
+        "legalName": "Allianz SE",
+        "country": "DE",
+        "city": "München",
+        "region": "DE-BY",
+        "legalForm": "SGST",
+        "registrationDate": "2006-10-12",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Allianz SE"
+      }
+    },
+    {
+      "id": "antgroup",
+      "name": "蚂蚁科技集团股份有限公司",
+      "nameEn": "Ant Group Co., Ltd.",
+      "country": "中国",
+      "hq": "浙江 杭州",
+      "founded": 2014,
+      "size": "巨头",
+      "classCode": "6619",
+      "business": "支付技术、数字金融平台与金融技术服务",
+      "products": "支付宝、数字支付、信用评估、保险与理财科技平台",
+      "desc": "由支付宝演化而来的数字支付与金融科技平台。以支付为流量入口，向信贷、理财、保险的技术服务延伸，是国内金融科技监管演进的重要案例主体。",
+      "tags": [
+        "支付宝",
+        "金融科技",
+        "监管演进"
+      ],
+      "gleif": {
+        "lei": "30030071TC2VB5OCSC22",
+        "legalName": "蚂蚁科技集团股份有限公司",
+        "country": "CN",
+        "city": "杭州市",
+        "region": "CN-ZJ",
+        "legalForm": "ECAK",
+        "registrationDate": "2000-10-18",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "蚂蚁科技集团股份有限公司"
+      }
+    },
+    {
+      "id": "vanke",
+      "name": "万科企业股份有限公司",
+      "nameEn": "China Vanke Co., Ltd.",
+      "country": "中国",
+      "hq": "广东 深圳",
+      "founded": 1984,
+      "ticker": "000002.SZ / 2202.HK",
+      "size": "巨头",
+      "classCode": "6810",
+      "business": "住宅开发与物业服务",
+      "products": "住宅开发、商业地产、物业管理、租赁住房、物流仓储",
+      "desc": "中国最具代表性的房地产开发企业之一，以职业经理人制度与规范化治理闻名。在地产行业深度调整期，其现金流管理与多元化布局受到广泛关注。",
+      "tags": [
+        "住宅开发",
+        "职业经理人",
+        "行业调整"
+      ],
+      "gleif": {
+        "lei": "529900E66UJ2DWY7KW55",
+        "legalName": "China Vanke Co., Ltd.",
+        "country": "CN",
+        "city": "Shenzhen",
+        "region": "CN-GD",
+        "legalForm": "ECAK",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "CHINA VANKE CO., LTD."
+      }
+    },
+    {
+      "id": "cbre",
+      "name": "世邦魏理仕集团",
+      "nameEn": "CBRE Group, Inc.",
+      "country": "美国",
+      "hq": "德克萨斯州 达拉斯",
+      "founded": 1906,
+      "ticker": "CBRE.NYSE",
+      "size": "巨头",
+      "classCode": "6821",
+      "business": "商业地产经纪、物业与投资管理",
+      "products": "写字楼与工业地产经纪、物业管理、投资管理、估值咨询",
+      "desc": "全球最大的商业地产服务公司，服务对象以企业租户与机构投资者为主。业务不持有重资产，而是靠佣金与管理费体系运营全球网络。",
+      "tags": [
+        "商业地产服务",
+        "轻资产",
+        "全球网络"
+      ],
+      "gleif": {
+        "lei": "52990016II9MJ2OSWA10",
+        "legalName": "CBRE Group, Inc.",
+        "country": "US",
+        "city": "Wilmington",
+        "region": "US-DE",
+        "legalForm": "8888",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "CBRE Group, Inc."
+      },
+      "sec": {
+        "cik": "0001138118",
+        "legalName": "CBRE GROUP, INC.",
+        "ticker": "CBRE",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001138118&type=10-K",
+        "sic": "6500",
+        "sicDescription": "Real Estate",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "deloitte",
+      "name": "德勤有限公司",
+      "nameEn": "Deloitte Touche Tohmatsu Limited",
+      "country": "英国",
+      "hq": "伦敦",
+      "founded": 1845,
+      "size": "巨头",
+      "classCode": "6920",
+      "business": "审计、税务、咨询与财务顾问",
+      "products": "财务报表审计、税务筹划、管理咨询、风险顾问、财务顾问",
+      "desc": "全球\"四大\"会计师事务所之一，营收规模居前。采用全球成员所联盟结构，各成员国为独立实体，业务从审计延伸至咨询与技术服务。",
+      "tags": [
+        "四大",
+        "审计",
+        "成员所联盟"
+      ]
+    },
+    {
+      "id": "bdo-china",
+      "name": "立信会计师事务所（特殊普通合伙）",
+      "nameEn": "BDO China Shu Lun Pan Certified Public Accountants LLP",
+      "country": "中国",
+      "hq": "上海",
+      "founded": 1927,
+      "size": "大型",
+      "classCode": "6920",
+      "business": "审计鉴证与会计咨询服务",
+      "products": "财务报表审计、内部控制审计、税务服务、IPO 财务顾问",
+      "desc": "中国本土规模最大的会计师事务所之一，历史可追溯至 1927 年潘序伦创办的立信会计学校。为大量 A 股上市公司提供审计服务。",
+      "tags": [
+        "本土所",
+        "A 股审计",
+        "历史渊源"
+      ],
+      "gleif": {
+        "lei": "300300ULNPL40Z8KTU42",
+        "legalName": "立信会计师事务所（特殊普通合伙）",
+        "country": "CN",
+        "city": "黄浦区",
+        "region": "CN-SH",
+        "legalForm": "ECAK",
+        "registrationDate": "2011-01-23",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "立信会计师事务所（特殊普通合伙）"
+      }
+    },
+    {
+      "id": "kingwood",
+      "name": "北京市金杜律师事务所",
+      "nameEn": "King & Wood Mallesons",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1993,
+      "size": "大型",
+      "classCode": "6910",
+      "business": "综合法律服务",
+      "products": "公司与并购、证券与资本市场、知识产权、争议解决、合规",
+      "desc": "中国领先的综合性律师事务所，曾与澳大利亚 Mallesons 合并组建亚太大所。在跨境并购、资本市场与反垄断领域具有较强影响力。",
+      "tags": [
+        "律所",
+        "跨境并购",
+        "资本市场"
+      ],
+      "gleif": {
+        "lei": "300300NIFA1100060869",
+        "legalName": "北京市金杜律师事务所",
+        "country": "CN",
+        "city": "朝阳区",
+        "region": "CN-BJ",
+        "legalForm": "6NSC",
+        "registrationDate": "1993-05-04",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "北京市金杜律师事务所"
+      }
+    },
+    {
+      "id": "mckinsey",
+      "name": "麦肯锡公司",
+      "nameEn": "McKinsey & Company",
+      "country": "美国",
+      "hq": "纽约",
+      "founded": 1926,
+      "size": "巨头",
+      "classCode": "7020",
+      "business": "战略管理咨询",
+      "products": "企业战略、组织变革、运营改善、数字化转型咨询",
+      "desc": "全球最负盛名的战略咨询公司，由芝加哥大学会计学教授麦肯锡创立。其\"合伙人制 + 项目制\"的组织形式成为整个咨询行业的标准范式。",
+      "tags": [
+        "战略咨询",
+        "合伙人制",
+        "行业范式"
+      ],
+      "gleif": {
+        "lei": "KRXXK3K6ZU5I4X4VTH24",
+        "legalName": "MCKINSEY & COMPANY, INC.",
+        "country": "US",
+        "city": "ALBANY",
+        "region": "US-NY",
+        "legalForm": "PJ10",
+        "registrationDate": "1956-06-25",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "McKinsey & Company"
+      }
+    },
+    {
+      "id": "arup",
+      "name": "奥雅纳工程顾问公司",
+      "nameEn": "Arup Group Limited",
+      "country": "英国",
+      "hq": "伦敦",
+      "founded": 1946,
+      "size": "大型",
+      "classCode": "7110",
+      "business": "结构、岩土、机电与工程咨询服务",
+      "products": "结构工程咨询、消防与机电设计、可持续设计、声学顾问",
+      "desc": "全球知名的工程顾问公司，以悉尼歌剧院、北京鸟巢等标志性项目的结构设计闻名。员工通过信托持股，保持独立的专业机构属性。",
+      "tags": [
+        "工程顾问",
+        "标志性建筑",
+        "信托持股"
+      ],
+      "gleif": {
+        "lei": "9845004E750F965A6C35",
+        "legalName": "ARUP GROUP LIMITED",
+        "country": "GB",
+        "city": "London",
+        "region": "",
+        "legalForm": "H0PO",
+        "registrationDate": "1977-05-04",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "Arup Group Limited"
+      }
+    },
+    {
+      "id": "wuxiapptec",
+      "name": "无锡药明康德新药开发股份有限公司",
+      "nameEn": "WuXi AppTec Co., Ltd.",
+      "country": "中国",
+      "hq": "江苏 无锡 / 上海",
+      "founded": 2000,
+      "ticker": "603259.SH / 2359.HK",
+      "size": "巨头",
+      "classCode": "7210",
+      "business": "药物研发与生产外包（CRO / CDMO）",
+      "products": "药物发现、临床前研究、临床试验、原料药与制剂生产",
+      "desc": "全球领先的一体化医药研发生产平台。以\"跟随药物分子\"的 CRDMO 模式，为全球药企提供从靶点发现到商业化生产的外包服务，是创新药产业链的关键枢纽。",
+      "tags": [
+        "CRO/CDMO",
+        "一体化平台",
+        "外包枢纽"
+      ],
+      "gleif": {
+        "lei": "254900OEPQLZSPLN9175",
+        "legalName": "无锡药明康德新药开发股份有限公司",
+        "country": "CN",
+        "city": "无锡市",
+        "region": "CN-JS",
+        "legalForm": "ECAK",
+        "registrationDate": "2000-12-01",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "无锡药明康德新药开发股份有限公司"
+      }
+    },
+    {
+      "id": "hertz",
+      "name": "赫兹全球控股公司",
+      "nameEn": "Hertz Global Holdings, Inc.",
+      "country": "美国",
+      "hq": "佛罗里达州 埃斯特罗",
+      "founded": 1918,
+      "ticker": "HTZ.NASDAQ",
+      "size": "大型",
+      "classCode": "7710",
+      "business": "汽车短期租赁与车队运营",
+      "products": "机场与市区租车、车队管理、二手车销售",
+      "desc": "全球历史最悠久的租车公司之一。核心资产是庞大的自营车队，其残值管理与批量采购议价能力是盈利关键，近年也向车队管理服务延伸。",
+      "tags": [
+        "租车",
+        "车队残值",
+        "机场网点"
+      ],
+      "gleif": {
+        "lei": "549300NBK3K85MH1EX16",
+        "legalName": "HERTZ GLOBAL HOLDINGS, INC.",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "2015-08-28",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Hertz Global Holdings, Inc."
+      },
+      "sec": {
+        "cik": "0001657853",
+        "legalName": "HERTZ GLOBAL HOLDINGS, INC",
+        "ticker": "HTZ",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001657853&type=10-K",
+        "sic": "7510",
+        "sicDescription": "Services-Auto Rental & Leasing (No Drivers)",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "bocaviation",
+      "name": "中银航空租赁有限公司",
+      "nameEn": "BOC Aviation Limited",
+      "country": "新加坡",
+      "hq": "新加坡",
+      "founded": 1993,
+      "ticker": "2588.HK",
+      "size": "大型",
+      "classCode": "7730",
+      "business": "商用飞机经营性租赁",
+      "products": "飞机经营性租赁、购机回租、机队管理",
+      "desc": "亚洲领先的飞机经营性租赁公司，由中国银行控股。通过批量订购新机并以长期租约出租给全球航司，形成稳定的利差与残值收益结构。",
+      "tags": [
+        "飞机租赁",
+        "中银控股",
+        "经营性租赁"
+      ],
+      "gleif": {
+        "lei": "254900H06V5RMEB3KE72",
+        "legalName": "BOC AVIATION LIMITED",
+        "country": "SG",
+        "city": "Singapore",
+        "region": "SG-01",
+        "legalForm": "IWZF",
+        "registrationDate": "1993-11-25",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "BOC Aviation Limited"
+      }
+    },
+    {
+      "id": "manpower",
+      "name": "万宝盛华集团",
+      "nameEn": "ManpowerGroup Inc.",
+      "country": "美国",
+      "hq": "威斯康星州 密尔沃基",
+      "founded": 1948,
+      "ticker": "MAN.NYSE",
+      "size": "巨头",
+      "classCode": "7810",
+      "business": "人力资源服务与用工解决方案",
+      "products": "灵活用工、猎头招聘、人才外包、职业培训",
+      "desc": "全球三大人力资源服务公司之一，是最早提出\"灵活用工\"概念的企业之一。在欧美市场为大量企业提供弹性人力配置服务。",
+      "tags": [
+        "人力资源",
+        "灵活用工",
+        "全球网络"
+      ],
+      "gleif": {
+        "lei": "ERO1WSFOSR0JJ6CRQ987",
+        "legalName": "MANPOWERGROUP INC.",
+        "country": "US",
+        "city": "MADISON",
+        "region": "US-WI",
+        "legalForm": "6S32",
+        "registrationDate": "1990-04-12",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "ManpowerGroup Inc."
+      },
+      "sec": {
+        "cik": "0000871763",
+        "legalName": "ManpowerGroup Inc.",
+        "ticker": "MAN",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000871763&type=10-K",
+        "sic": "7363",
+        "sicDescription": "Services-Help Supply Services",
+        "stateOfIncorporation": "WI"
+      }
+    },
+    {
+      "id": "51job",
+      "name": "前程无忧（51job）",
+      "nameEn": "51job, Inc.",
+      "country": "中国",
+      "hq": "上海",
+      "founded": 1998,
+      "size": "大型",
+      "classCode": "7810",
+      "business": "在线招聘与人力资源服务",
+      "products": "网络招聘平台、校园招聘、人才测评、人事外包",
+      "desc": "中国最早的在线招聘平台之一，以\"前程无忧 51job\"品牌服务企业雇主与求职者，后完成私有化退市，业务向人力资源综合服务延伸。",
+      "tags": [
+        "在线招聘",
+        "人力资源",
+        "私有化"
+      ],
+      "gleif": {
+        "lei": "52990088ZF32Q8YHCJ53",
+        "legalName": "51job, Inc.",
+        "country": "KY",
+        "city": "Georgetown",
+        "region": "",
+        "legalForm": "8888",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "51job, Inc."
+      }
+    },
+    {
+      "id": "trip",
+      "name": "携程集团有限公司",
+      "nameEn": "Trip.com Group Limited",
+      "country": "中国",
+      "hq": "上海",
+      "founded": 1999,
+      "ticker": "9961.HK / TCOM.NASDAQ",
+      "size": "巨头",
+      "classCode": "7911",
+      "business": "在线旅游预订平台（OTA）",
+      "products": "机票预订、酒店预订、度假产品、商旅管理、内容社区",
+      "desc": "中国最大的在线旅游平台，通过携程、去哪儿、Trip.com 等品牌覆盖国内外市场。以呼叫中心 + 平台的混合模式建立服务壁垒。",
+      "tags": [
+        "OTA",
+        "酒店机票",
+        "服务壁垒"
+      ],
+      "gleif": {
+        "lei": "2549004RMYDSRQL4KW41",
+        "legalName": "Trip.com Group Limited",
+        "country": "KY",
+        "city": "George Town",
+        "region": "",
+        "legalForm": "OSBR",
+        "registrationDate": "2000-03-03",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "Trip.com Group Limited"
+      },
+      "sec": {
+        "cik": "0001269238",
+        "legalName": "Trip.com Group Ltd",
+        "ticker": "TCOM",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001269238&type=10-K",
+        "sic": "7389",
+        "sicDescription": "Services-Business Services, NEC",
+        "stateOfIncorporation": "E9"
+      }
+    },
+    {
+      "id": "g4s",
+      "name": "杰富仕公司",
+      "nameEn": "G4S Limited (Allied Universal)",
+      "country": "英国",
+      "hq": "伦敦 / 克劳利",
+      "founded": 2004,
+      "size": "巨头",
+      "classCode": "8011",
+      "business": "安保服务、现金押运与设施保护",
+      "products": "人力保安、押运与现金处理、电子安防、风险评估",
+      "desc": "全球最大的私营安保服务企业之一，为跨国企业、机场、政府机构提供安保人力与安防系统，后并入美国 Allied Universal。",
+      "tags": [
+        "安保服务",
+        "跨国用工",
+        "并购整合"
+      ]
+    },
+    {
+      "id": "aramark",
+      "name": "爱玛客公司",
+      "nameEn": "Aramark",
+      "country": "美国",
+      "hq": "宾夕法尼亚州 费城",
+      "founded": 1959,
+      "ticker": "ARMK.NYSE",
+      "size": "巨头",
+      "classCode": "8110",
+      "business": "设施管理与餐饮供应外包服务",
+      "products": "企业餐饮、医院与学校后勤、设施维护、制服服务",
+      "desc": "全球领先的综合设施服务与餐饮外包公司，为医院、学校、体育场馆与企业园区提供后勤一体化运营，属于典型的 B2B 服务外包模式。",
+      "tags": [
+        "设施外包",
+        "团餐",
+        "B2B 服务"
+      ],
+      "sec": {
+        "cik": "0001584509",
+        "legalName": "Aramark",
+        "ticker": "ARMK",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001584509&type=10-K",
+        "sic": "5812",
+        "sicDescription": "Retail-Eating  Places",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "onewo",
+      "name": "万物云空间科技服务股份有限公司",
+      "nameEn": "Onewo Inc.",
+      "country": "中国",
+      "hq": "广东 深圳",
+      "founded": 2020,
+      "ticker": "2602.HK",
+      "size": "大型",
+      "classCode": "8121",
+      "business": "物业管理与空间科技服务",
+      "products": "住宅物业管理、商企物业服务、楼宇清洁、城市空间服务",
+      "desc": "由万科物业分拆上市的物业服务企业。以\"空间科技服务\"为定位，通过数字化平台管理住宅、商企与城市公共空间，是物管行业规模领先者之一。",
+      "tags": [
+        "物业管理",
+        "万科分拆",
+        "空间服务"
+      ]
+    },
+    {
+      "id": "chinatax",
+      "name": "国家税务总局",
+      "nameEn": "State Taxation Administration of China",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1950,
+      "size": "巨头",
+      "classCode": "8413",
+      "business": "税收征收管理与纳税服务",
+      "products": "税款征收、税务稽查、纳税服务、税收信息化",
+      "desc": "负责中国税收征收管理的国务院直属机构。近年以\"金税工程\"推动税收征管数字化，通过发票电子化与大数据比对提升征管效率。",
+      "tags": [
+        "公共部门",
+        "金税工程",
+        "数字征管"
+      ]
+    },
+    {
+      "id": "pku",
+      "name": "北京大学",
+      "nameEn": "Peking University",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1898,
+      "size": "巨头",
+      "classCode": "8540",
+      "business": "高等教育与科学研究",
+      "products": "本科与研究生教育、科研项目、技术转移、继续教育",
+      "desc": "中国近代第一所国立综合性大学。覆盖人文、社科、理学、医学、工学等学科门类，同时是科研与技术转移的重要主体。",
+      "tags": [
+        "高等教育",
+        "综合性大学",
+        "科研"
+      ]
+    },
+    {
+      "id": "neworiental",
+      "name": "新东方教育科技集团",
+      "nameEn": "New Oriental Education & Technology Group Inc.",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1993,
+      "ticker": "9901.HK / EDU.NYSE",
+      "size": "大型",
+      "classCode": "8559",
+      "business": "教育培训与教育科技服务",
+      "products": "出国考试培训、语言培训、素质教育、智慧教育、直播电商",
+      "desc": "中国最具影响力的民营教育机构之一，以出国考试培训起家。在\"双减\"政策后大幅转向非学科素质教育、智能学习设备与东方甄选电商业务。",
+      "tags": [
+        "民办教育",
+        "转型",
+        "东方甄选"
+      ],
+      "gleif": {
+        "lei": "529900NHZVBZQZ8EKN29",
+        "legalName": "NEW ORIENTAL EDUCATION & TECHNOLOGY GROUP INC.",
+        "country": "KY",
+        "city": "GEORGE TOWN",
+        "region": "",
+        "legalForm": "MPUG",
+        "registrationDate": "2004-08-18",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "NEW ORIENTAL EDUCATION & TECHNOLOGY GROUP INC."
+      },
+      "sec": {
+        "cik": "0001372920",
+        "legalName": "New Oriental Education & Technology Group Inc.",
+        "ticker": "EDU",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001372920&type=10-K",
+        "sic": "8200",
+        "sicDescription": "Services-Educational Services",
+        "stateOfIncorporation": "E9"
+      }
+    },
+    {
+      "id": "tal",
+      "name": "好未来教育集团",
+      "nameEn": "TAL Education Group",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2003,
+      "ticker": "TAL.NYSE",
+      "size": "大型",
+      "classCode": "8559",
+      "business": "教育科技与学习服务",
+      "products": "智能学习硬件、素质教育、素养课程、教育内容服务",
+      "desc": "以\"学而思\"品牌闻名的教育科技企业。政策调整后转向学习机等智能硬件与素质教育，是教培行业转型的代表性观察样本。",
+      "tags": [
+        "学而思",
+        "智能硬件",
+        "行业转型"
+      ],
+      "gleif": {
+        "lei": "5493003PJZS0EC085V72",
+        "legalName": "TAL Education Group",
+        "country": "KY",
+        "city": "Camana Bay, Grand Cayman",
+        "region": "",
+        "legalForm": "T5UM",
+        "registrationDate": "2008-01-09",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "TAL EDUCATION GROUP"
+      },
+      "sec": {
+        "cik": "0001499620",
+        "legalName": "TAL Education Group",
+        "ticker": "TAL",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001499620&type=10-K",
+        "sic": "8200",
+        "sicDescription": "Services-Educational Services",
+        "stateOfIncorporation": "E9"
+      }
+    },
+    {
+      "id": "cee",
+      "name": "中国东方教育控股有限公司",
+      "nameEn": "China East Education Holdings Limited",
+      "country": "中国",
+      "hq": "安徽 合肥",
+      "founded": 1988,
+      "ticker": "0667.HK",
+      "size": "大型",
+      "classCode": "8552",
+      "business": "职业技能教育培训",
+      "products": "烹饪、汽车维修、IT、美业等职业技能培训",
+      "desc": "中国最大的职业技能教育机构之一，运营新东方烹饪、万通汽车、新华电脑等品牌，面向就业市场提供实操型技能培训。",
+      "tags": [
+        "职业教育",
+        "技能培训",
+        "连锁办学"
+      ],
+      "gleif": {
+        "lei": "254900YPQ9YN14HP4W57",
+        "legalName": "China East Education Holdings Limited",
+        "country": "KY",
+        "city": "George Town",
+        "region": "",
+        "legalForm": "4XP8",
+        "registrationDate": "2018-10-04",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "China East Education Holdings Limited"
+      }
+    },
+    {
+      "id": "mayoclinic",
+      "name": "梅奥诊所",
+      "nameEn": "Mayo Clinic",
+      "country": "美国",
+      "hq": "明尼苏达州 罗切斯特",
+      "founded": 1864,
+      "size": "巨头",
+      "classCode": "8610",
+      "business": "综合医疗、医学研究与医学教育",
+      "products": "疑难重症诊疗、医学研究、住院医师培训、远程医疗",
+      "desc": "全球最负盛名的医疗机构之一，以\"多学科团队协作会诊\"的诊疗模式与《梅奥诊所学报》著称，长期位列全美最佳医院榜首。",
+      "tags": [
+        "顶级医院",
+        "多学科协作",
+        "非营利"
+      ],
+      "gleif": {
+        "lei": "5493001OHMD58DCY4635",
+        "legalName": "Mayo Clinic",
+        "country": "US",
+        "city": "ROCHESTER",
+        "region": "US-MN",
+        "legalForm": "9I4Y",
+        "registrationDate": "1919-10-10",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "Mayo Clinic"
+      }
+    },
+    {
+      "id": "unitedfamily",
+      "name": "和睦家医疗",
+      "nameEn": "United Family Healthcare",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1997,
+      "size": "中型",
+      "classCode": "8610",
+      "business": "高端综合性医疗服务",
+      "products": "综合医院、妇儿专科、家庭全科、健康体检、远程医疗",
+      "desc": "中国领先的外资背景高端医疗服务机构，在北京、上海等地运营综合医院与诊所，以国际标准诊疗流程与全科家庭医生模式为特色。",
+      "tags": [
+        "高端医疗",
+        "外资背景",
+        "全科模式"
+      ]
+    },
+    {
+      "id": "aier",
+      "name": "爱尔眼科医院集团股份有限公司",
+      "nameEn": "Aier Eye Hospital Group Co., Ltd.",
+      "country": "中国",
+      "hq": "湖南 长沙",
+      "founded": 2003,
+      "ticker": "300015.SZ",
+      "size": "巨头",
+      "classCode": "8699",
+      "business": "眼科专科连锁医疗服务",
+      "products": "屈光手术、白内障手术、视光配镜、眼底病诊疗",
+      "desc": "全球规模最大的眼科医疗连锁集团。以\"分级连锁\"模式（中心城市旗舰医院 + 地县医院）实现规模化复制，并通过并购基金加速医院网络扩张。",
+      "tags": [
+        "眼科连锁",
+        "分级连锁",
+        "并购扩张"
+      ]
+    },
+    {
+      "id": "topchoice",
+      "name": "通策医疗股份有限公司",
+      "nameEn": "Topchoice Medical Co., Inc.",
+      "country": "中国",
+      "hq": "浙江 杭州",
+      "founded": 1995,
+      "ticker": "600763.SH",
+      "size": "中型",
+      "classCode": "8620",
+      "business": "口腔专科连锁医疗服务",
+      "products": "口腔种植、正畸、修复、儿童口腔、口腔预防",
+      "desc": "中国领先的口腔医疗连锁企业，以\"区域总院 + 分院\"的蒲公英模式在浙江省形成密集网络，是专科医疗连锁化的代表性样本。",
+      "tags": [
+        "口腔连锁",
+        "区域深耕",
+        "蒲公英计划"
+      ]
+    },
+    {
+      "id": "taikangcare",
+      "name": "泰康之家（泰康保险集团）",
+      "nameEn": "Taikang Community (Taikang Insurance Group)",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2009,
+      "size": "大型",
+      "classCode": "8710",
+      "business": "持续照护退休社区（CCRC）运营",
+      "products": "养老社区入住、护理照护、康复医疗、保险对接养老",
+      "desc": "中国保险业进军养老机构的先行者，在北京、上海等地建设大型 CCRC 社区。以\"保险产品 + 养老社区入住资格\"的联动模式打通资金与服务两端。",
+      "tags": [
+        "养老社区",
+        "CCRC",
+        "保险+服务"
+      ]
+    },
+    {
+      "id": "disney",
+      "name": "华特迪士尼公司",
+      "nameEn": "The Walt Disney Company",
+      "country": "美国",
+      "hq": "加利福尼亚州 伯班克",
+      "founded": 1923,
+      "ticker": "DIS.NYSE",
+      "size": "巨头",
+      "classCode": "5911",
+      "business": "影视内容制作、主题乐园与流媒体运营",
+      "products": "电影与剧集、迪士尼乐园、Disney+、IP 授权与衍生品",
+      "desc": "全球最大的娱乐传媒集团之一。以\"IP 内容—院线—乐园—衍生品—流媒体\"的飞轮模式运营，是内容资产变现链条最完整的企业。",
+      "tags": [
+        "IP 飞轮",
+        "主题乐园",
+        "Disney+"
+      ],
+      "gleif": {
+        "lei": "549300GZKULIZ0WOW665",
+        "legalName": "THE WALT DISNEY COMPANY",
+        "country": "US",
+        "city": "WILMINGTON",
+        "region": "US-DE",
+        "legalForm": "XTIQ",
+        "registrationDate": "2018-06-14",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "The Walt Disney Company"
+      },
+      "sec": {
+        "cik": "0001744489",
+        "legalName": "Walt Disney Co",
+        "ticker": "DIS",
+        "cikUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001744489&type=10-K",
+        "sic": "7990",
+        "sicDescription": "Services-Miscellaneous Amusement & Recreation",
+        "stateOfIncorporation": "DE"
+      }
+    },
+    {
+      "id": "huayi",
+      "name": "华谊兄弟传媒股份有限公司",
+      "nameEn": "Huayi Brothers Media Corporation",
+      "country": "中国",
+      "hq": "浙江 金华 / 北京",
+      "founded": 1994,
+      "ticker": "300027.SZ",
+      "size": "中型",
+      "classCode": "5911",
+      "business": "影视内容制作、发行与艺人经纪",
+      "products": "电影投资制作、电视剧、艺人经纪、实景娱乐",
+      "desc": "中国最早登陆创业板的影视公司之一，曾出品大量高票房华语电影。业务覆盖内容制作、发行、经纪与实景娱乐，是中国电影产业化进程的代表企业。",
+      "tags": [
+        "影视制作",
+        "创业板首批",
+        "实景娱乐"
+      ],
+      "gleif": {
+        "lei": "300300O0S2OYX08A4528",
+        "legalName": "华谊兄弟传媒股份有限公司",
+        "country": "CN",
+        "city": "金华市",
+        "region": "CN-ZJ",
+        "legalForm": "ECAK",
+        "registrationDate": "2004-11-18",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "华谊兄弟传媒股份有限公司"
+      }
+    },
+    {
+      "id": "csig",
+      "name": "中体产业集团股份有限公司",
+      "nameEn": "China Sports Industry Group Co., Ltd.",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1998,
+      "ticker": "600158.SH",
+      "size": "中型",
+      "classCode": "9319",
+      "business": "体育赛事运营与体育服务",
+      "products": "赛事组织与运营、体育场馆管理、体育彩票服务、认证服务",
+      "desc": "国家体育总局背景的体育产业上市公司，业务涵盖赛事运营、场馆经营与体育服务认证，是中国体育产业化的主要载体之一。",
+      "tags": [
+        "体育产业",
+        "赛事运营",
+        "国资背景"
+      ],
+      "gleif": {
+        "lei": "300300ZRO6Z84TJHGA10",
+        "legalName": "中体产业集团股份有限公司",
+        "country": "CN",
+        "city": "武清区",
+        "region": "CN-TJ",
+        "legalForm": "ECAK",
+        "registrationDate": "",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "中体产业集团股份有限公司"
+      }
+    },
+    {
+      "id": "fangte",
+      "name": "华强方特文化科技集团股份有限公司",
+      "nameEn": "Shenzhen Fantawild Holdings Inc.",
+      "country": "中国",
+      "hq": "广东 深圳",
+      "founded": 2006,
+      "ticker": "834793.NEEQ",
+      "size": "大型",
+      "classCode": "9329",
+      "business": "主题公园运营与文化科技产品",
+      "products": "方特主题乐园、特种电影、动漫 IP（熊出没）、数字内容",
+      "desc": "中国本土规模领先的主题公园运营商，以\"文化 + 科技\"自主开发游乐设备与特种电影，通过轻资产授权模式在多地复制方特乐园。",
+      "tags": [
+        "主题公园",
+        "熊出没",
+        "轻资产输出"
+      ]
+    },
+    {
+      "id": "cisa",
+      "name": "中国钢铁工业协会",
+      "nameEn": "China Iron and Steel Association (CISA)",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 1999,
+      "size": "中型",
+      "classCode": "9411",
+      "business": "钢铁行业自律、统计与政策协调",
+      "products": "行业统计与信息、标准制定、国际交流、政策建议",
+      "desc": "中国钢铁行业的全国性行业组织，成员覆盖主要钢铁企业。承担行业运行监测、产能与价格协调、国际对话等职能，是行业治理结构中的重要一环。",
+      "tags": [
+        "行业协会",
+        "钢铁",
+        "行业治理"
+      ]
+    },
+    {
+      "id": "zmn-repair",
+      "name": "啄木鸟家庭维修",
+      "nameEn": "Zhuomuniao Home Repair",
+      "country": "中国",
+      "hq": "重庆",
+      "founded": 2012,
+      "size": "中型",
+      "classCode": "9522",
+      "business": "家庭设备维修服务网络",
+      "products": "家电维修、水电维修、管道疏通、家居安装",
+      "desc": "中国规模领先的家庭维修服务平台，通过全国工程师网络承接家电、水电与家居的到家维修服务，是\"互联网 + 到家服务\"模式在维修领域的实践。",
+      "tags": [
+        "到家维修",
+        "工程师网络",
+        "平台化"
+      ]
+    },
+    {
+      "id": "beautyfarm",
+      "name": "美丽田园医疗健康产业有限公司",
+      "nameEn": "Beauty Farm Medical and Health Industry Inc.",
+      "country": "中国",
+      "hq": "上海",
+      "founded": 1993,
+      "ticker": "2373.HK",
+      "size": "中型",
+      "classCode": "9622",
+      "business": "连锁美容与健康管理服务",
+      "products": "美容护理、抗衰、医美、健康管理、亚健康调理",
+      "desc": "中国领先的连锁美容与健康管理集团，以直营门店服务中高端客群，业务由传统生活美容向医美与健康管理延伸。",
+      "tags": [
+        "美容连锁",
+        "医美",
+        "直营门店"
+      ],
+      "gleif": {
+        "lei": "836800NPUXBHR3C81J44",
+        "legalName": "美丽田园医疗健康产业有限公司",
+        "country": "KY",
+        "city": "Grand Cayman",
+        "region": "",
+        "legalForm": "OSBR",
+        "registrationDate": "2022-02-09",
+        "registrationStatus": "LAPSED",
+        "score": 1,
+        "queriedAs": "美丽田园医疗健康产业有限公司"
+      }
+    },
+    {
+      "id": "swandaojia",
+      "name": "天鹅到家（58 同城旗下）",
+      "nameEn": "Swan Daojia (58.com)",
+      "country": "中国",
+      "hq": "北京",
+      "founded": 2014,
+      "size": "中型",
+      "classCode": "9700",
+      "business": "家庭服务人员撮合与管理",
+      "products": "家政保洁、月嫂育儿、养老陪护、家庭管家",
+      "desc": "中国规模领先的互联网家庭服务平台，通过平台撮合家庭与家政服务人员，并提供培训、保险与数字化管理系统，是家政用工组织化的代表。",
+      "tags": [
+        "家政平台",
+        "撮合服务",
+        "培训体系"
+      ]
+    },
+    {
+      "id": "un",
+      "name": "联合国",
+      "nameEn": "United Nations",
+      "country": "国际组织",
+      "hq": "美国 纽约",
+      "founded": 1945,
+      "size": "巨头",
+      "classCode": "9900",
+      "business": "国际和平、发展与人道主义事务协调",
+      "products": "维和行动、人道援助、发展项目、国际标准与公约",
+      "desc": "由主权国家组成的政府间国际组织，下设秘书处及众多专门机构（如世界卫生组织、世界银行、粮农组织等），是 ISIC 中\"国际组织和机构活动\"的典型主体。",
+      "tags": [
+        "国际组织",
+        "政府间",
+        "专门机构"
+      ],
+      "gleif": {
+        "lei": "549300HYGYJKXU2J8X74",
+        "legalName": "United Nations",
+        "country": "US",
+        "city": "New York",
+        "region": "US-NY",
+        "legalForm": "9999",
+        "registrationDate": "1945-10-24",
+        "registrationStatus": "ISSUED",
+        "score": 1,
+        "queriedAs": "United Nations"
+      }
+    }
+  ]
+}
